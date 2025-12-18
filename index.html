@@ -639,7 +639,7 @@
         .form-input:not(:placeholder-shown) + .form-label {
             top: -10px;
             left: 10px;
-            font-size: 0.85rem;
+            font-size = 0.85rem;
             background: var(--card-bg);
             padding: 0 10px;
             color: var(--cyber-teal);
@@ -931,15 +931,15 @@
                     <div class="stat-label">Placement Success</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">2.5K+</div>
+                    <div class="stat-number">1K+</div>
                     <div class="stat-label">Professionals Trained</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">100+</div>
+                    <div class="stat-number">1K+</div>
                     <div class="stat-label">Corporate Partners</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">24/7</div>
+                    <div class="stat-number">1K+</div>
                     <div class="stat-label">Lab Access</div>
                 </div>
             </div>
@@ -997,7 +997,7 @@
                         <div class="card-footer">
                             <div class="price-info">
                                 <div class="duration">6 Months Intensive Program</div>
-                                <div class="price">$20,000<span>/course</span></div>
+                                <div class="price">₹20,000<span>/course</span></div>
                             </div>
                             <button class="cta-button" onclick="enrollProgram('Penetration Testing')">
                                 <i class="fas fa-lock"></i> Enroll Now
@@ -1044,7 +1044,7 @@
                         <div class="card-footer">
                             <div class="price-info">
                                 <div class="duration">6 Months Comprehensive Program</div>
-                                <div class="price">$20,000<span>/course</span></div>
+                                <div class="price">₹14,999<span>/course</span></div>
                             </div>
                             <button class="cta-button" onclick="enrollProgram('Digital Forensics')">
                                 <i class="fas fa-lock"></i> Enroll Now
@@ -1091,7 +1091,7 @@
                         <div class="card-footer">
                             <div class="price-info">
                                 <div class="duration">3 Months Intensive Program</div>
-                                <div class="price">$15,000<span>/course</span></div>
+                                <div class="price">₹9,000<span>/course</span></div>
                             </div>
                             <button class="cta-button" onclick="enrollProgram('Bug Bounty')">
                                 <i class="fas fa-lock"></i> Enroll Now
@@ -1181,9 +1181,9 @@
                     <div class="form-group">
                         <select id="program" class="form-select">
                             <option value="">Select Program of Interest</option>
-                            <option value="penetration">Penetration Testing</option>
-                            <option value="forensics">Digital Forensics</option>
-                            <option value="bug-bounty">Bug Bounty</option>
+                            <option value="penetration">Penetration Testing - ₹1,49,999</option>
+                            <option value="forensics">Digital Forensics - ₹1,49,999</option>
+                            <option value="bug-bounty">Bug Bounty - ₹99,999</option>
                             <option value="consultation">Career Consultation</option>
                         </select>
                     </div>
@@ -1243,7 +1243,7 @@
                     <ul class="footer-links">
                         <li><i class="fas fa-phone" style="margin-right: 10px; color: var(--cyber-teal);"></i> +91 9611038535</li>
                         <li><i class="fas fa-envelope" style="margin-right: 10px; color: var(--cyber-teal);"></i> abuzersajidahamadumri@gmail.com</li>
-                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--cyber-teal);"></i> Cybersecurity Training Center</li>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--cyber-teal);"></i> Hosur, Kerebilchi-577218<br>Channagiri(TQ), Davanagere(Dist), Karnataka</li>
                         <li><i class="fas fa-clock" style="margin-right: 10px; color: var(--cyber-teal);"></i> Mon-Fri: 9AM-6PM IST</li>
                     </ul>
                 </div>
@@ -1251,7 +1251,7 @@
             
             <div class="copyright">
                 <p>© 2023 IWAN Tech Labs. All Rights Reserved. | Elite Cybersecurity Training Institute</p>
-                <p class="founder-note">Founded by Abuzer Sajid Ahamad Umri | 15+ Years Industry Experience</p>
+                <p class="founder-note">Founded by Abuzer Sajid | 2+ Years Industry Experience</p>
             </div>
         </div>
     </footer>
@@ -1381,7 +1381,11 @@
                 if (!startTimestamp) startTimestamp = timestamp;
                 const progress = Math.min((timestamp - startTimestamp) / duration, 1);
                 const value = Math.floor(progress * (end - start) + start);
-                element.textContent = value + (element.textContent.includes('%') ? '%' : 'K+');
+                if (element.textContent.includes('%')) {
+                    element.textContent = value + '%';
+                } else if (element.textContent.includes('K+')) {
+                    element.textContent = value + 'K+';
+                }
                 if (progress < 1) {
                     window.requestAnimationFrame(step);
                 }
