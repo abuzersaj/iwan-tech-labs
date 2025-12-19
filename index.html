@@ -12,7 +12,7 @@
 
     <!-- SEO Meta -->
     <meta name="description" content="Skill-based cybersecurity training and internship programs with hands-on labs and guided mentorship in Karnataka. Practical learning with industry-aligned curriculum." />
-    <meta name="keywords" content="cybersecurity training, ethical hacking, penetration testing, digital forensics, bug bounty training, cybersecurity skill development, practical IT training Karnataka" />
+    <meta name="keywords" content="cybersecurity training, ethical hacking, penetration testing, digital forensics, bug bounty training, cybersecurity skill development, practical IT training Karnataka, certificate verification" />
     <meta name="author" content="IWAN Tech Labs" />
     <meta name="robots" content="index, follow" />
 
@@ -555,6 +555,236 @@
             box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
         }
         
+        /* Certification Verification Section */
+        .verification-section {
+            padding: 120px 0;
+            background: var(--primary-black);
+            position: relative;
+        }
+        
+        .verification-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 25px;
+            padding: 60px;
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        
+        .verification-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .verification-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--cyber-teal), var(--electric-blue));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            font-size: 40px;
+            color: white;
+        }
+        
+        .verification-form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .verification-input-group {
+            position: relative;
+        }
+        
+        .verification-input {
+            width: 100%;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: var(--light-gray);
+            font-size: 1rem;
+            font-family: 'Space Grotesk', monospace;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        
+        .verification-input:focus {
+            outline: none;
+            border-color: var(--cyber-teal);
+            box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.1);
+        }
+        
+        .verification-input::placeholder {
+            color: var(--medium-gray);
+        }
+        
+        .verify-button {
+            background: linear-gradient(135deg, var(--cyber-teal), #10B981);
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        
+        .verify-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(6, 214, 160, 0.3);
+        }
+        
+        .verification-result {
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 15px;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .result-valid {
+            background: rgba(6, 214, 160, 0.1);
+            border: 1px solid rgba(6, 214, 160, 0.3);
+            color: var(--cyber-teal);
+        }
+        
+        .result-invalid {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #EF4444;
+        }
+        
+        .result-pending {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            color: #FBBF24;
+        }
+        
+        .result-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .result-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .result-title {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .certificate-details {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .detail-row {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 15px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            font-weight: 600;
+            color: var(--medium-gray);
+        }
+        
+        .detail-value {
+            color: var(--light-gray);
+            font-family: 'Space Grotesk', monospace;
+        }
+        
+        .qr-verification {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+        }
+        
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--cyber-teal);
+        }
+        
+        .verification-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .verification-option {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .verification-option:hover {
+            border-color: var(--cyber-teal);
+            transform: translateY(-5px);
+        }
+        
+        .option-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--electric-blue), var(--neon-purple));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 24px;
+            color: white;
+        }
+        
         /* Contact Section */
         .contact-section {
             padding: 120px 0;
@@ -909,6 +1139,10 @@
                 gap: 60px;
             }
             
+            .verification-container {
+                padding: 40px;
+            }
+            
             .footer-content {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -944,8 +1178,17 @@
                 font-size: 2.5rem;
             }
             
+            .verification-container {
+                padding: 30px;
+            }
+            
             .contact-form-container {
                 padding: 35px;
+            }
+            
+            .detail-row {
+                grid-template-columns: 1fr;
+                gap: 5px;
             }
             
             .whatsapp-float {
@@ -986,6 +1229,10 @@
             .footer-content {
                 grid-template-columns: 1fr;
             }
+            
+            .verification-options {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -1000,7 +1247,7 @@
             
             <nav class="nav-links">
                 <a href="#programs" class="nav-link">Programs</a>
-                <a href="#methodology" class="nav-link">Methodology</a>
+                <a href="#verification" class="nav-link">Verify Certificate</a>
                 <a href="#success" class="nav-link">Success</a>
                 <a href="#resources" class="nav-link">Resources</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -1038,15 +1285,14 @@
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">500+</div>
-                    <div class="stat-label">Projects Completed</div>
+                    <div class="stat-label">Certificates Issued</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">24/7</div>
                     <div class="stat-label">Lab Access</div>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Practical Focus</div>
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Verifiable Certificates</div>
                 </div>
             </div>
         </div>
@@ -1205,6 +1451,84 @@
         </div>
     </section>
     
+    <!-- Certificate Verification Section -->
+    <section id="verification" class="verification-section">
+        <div class="container">
+            <div class="verification-container">
+                <div class="verification-header">
+                    <div class="verification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h2 class="section-title">Certificate Verification</h2>
+                    <p class="section-description">
+                        Verify the authenticity of IWAN Tech Labs certificates using certificate ID or QR code scan
+                    </p>
+                </div>
+                
+                <div class="verification-options">
+                    <div class="verification-option" onclick="showVerificationMethod('certificate')">
+                        <div class="option-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <h3>Certificate ID</h3>
+                        <p>Verify using your certificate number</p>
+                    </div>
+                    
+                    <div class="verification-option" onclick="showVerificationMethod('qr')">
+                        <div class="option-icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h3>QR Code Scan</h3>
+                        <p>Scan the QR code on your certificate</p>
+                    </div>
+                    
+                    <div class="verification-option" onclick="showVerificationMethod('name')">
+                        <div class="option-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Name Search</h3>
+                        <p>Search certificates by candidate name</p>
+                    </div>
+                </div>
+                
+                <div id="certificateVerification" style="display: none;">
+                    <form class="verification-form" id="verificationForm">
+                        <div class="verification-input-group">
+                            <input type="text" id="certificateId" class="verification-input" 
+                                   placeholder="Enter Certificate ID (e.g., ITL-CERT-2024-00123)" 
+                                   pattern="ITL-CERT-\d{4}-\d{5}"
+                                   title="Format: ITL-CERT-YYYY-XXXXX">
+                        </div>
+                        
+                        <div class="verification-input-group" id="nameInput" style="display: none;">
+                            <input type="text" id="candidateName" class="verification-input" 
+                                   placeholder="Enter Full Name">
+                        </div>
+                        
+                        <button type="button" class="verify-button" onclick="verifyCertificate()">
+                            <i class="fas fa-search"></i> Verify Certificate
+                        </button>
+                    </form>
+                    
+                    <div id="qrVerification" style="display: none;">
+                        <div class="qr-verification">
+                            <div class="qr-placeholder">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <p>Scan the QR code on your certificate using any QR scanner app</p>
+                            <p style="color: var(--cyber-teal); margin-top: 10px;">
+                                <i class="fas fa-info-circle"></i>
+                                The QR code will redirect to this verification page with your certificate ID
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div id="verificationResult" class="verification-result"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Skill Development Benefits Section -->
     <section id="methodology" class="programs-section" style="background: var(--navy-blue);">
         <div class="container">
@@ -1221,7 +1545,7 @@
                         </div>
                         <h3 class="program-title">Certificate of Completion</h3>
                         <p class="program-description">
-                            Receive certificate upon successful completion of training program requirements, issued by IWAN Tech Labs.
+                            Receive verifiable certificate upon successful completion of training program requirements, issued by IWAN Tech Labs.
                         </p>
                     </div>
                 </div>
@@ -1369,9 +1693,8 @@
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#programs">Training Programs</a></li>
+                        <li><a href="#verification">Verify Certificate</a></li>
                         <li><a href="#methodology">Learning Methodology</a></li>
-                        <li><a href="#success">Success Stories</a></li>
-                        <li><a href="#resources">Learning Resources</a></li>
                         <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
@@ -1382,8 +1705,7 @@
                         <li><a href="#programs">Penetration Testing Training</a></li>
                         <li><a href="#programs">Digital Forensics Training</a></li>
                         <li><a href="#programs">Bug Bounty Training</a></li>
-                        <li><a href="#programs">Cloud Security Training</a></li>
-                        <li><a href="#programs">Security Analytics Training</a></li>
+                        <li><a href="#programs">Certificate Verification</a></li>
                     </ul>
                 </div>
                 
@@ -1425,6 +1747,294 @@
     </button>
 
     <script>
+        // Certificate Verification System
+        let currentVerificationMethod = 'certificate';
+        
+        // Sample certificate database (in production, this would be a server-side database)
+        const certificateDatabase = {
+            "ITL-CERT-2024-00123": {
+                id: "ITL-CERT-2024-00123",
+                name: "Rahul Sharma",
+                program: "Penetration Testing Training",
+                issueDate: "2024-01-15",
+                expiryDate: "2026-01-15",
+                status: "VALID",
+                grade: "A+",
+                instructor: "Abuzer Sajid",
+                verificationUrl: "https://iwantechlabs.com/verify/ITL-CERT-2024-00123"
+            },
+            "ITL-CERT-2024-00245": {
+                id: "ITL-CERT-2024-00245",
+                name: "Priya Patel",
+                program: "Digital Forensics Training",
+                issueDate: "2024-02-20",
+                expiryDate: "2026-02-20",
+                status: "VALID",
+                grade: "A",
+                instructor: "Abuzer Sajid",
+                verificationUrl: "https://iwantechlabs.com/verify/ITL-CERT-2024-00245"
+            },
+            "ITL-CERT-2024-00367": {
+                id: "ITL-CERT-2024-00367",
+                name: "Amit Kumar",
+                program: "Bug Bounty Training",
+                issueDate: "2024-03-10",
+                expiryDate: "2025-09-10",
+                status: "VALID",
+                grade: "A-",
+                instructor: "Abuzer Sajid",
+                verificationUrl: "https://iwantechlabs.com/verify/ITL-CERT-2024-00367"
+            },
+            "ITL-CERT-2023-00987": {
+                id: "ITL-CERT-2023-00987",
+                name: "Sneha Reddy",
+                program: "Penetration Testing Training",
+                issueDate: "2023-11-05",
+                expiryDate: "2025-11-05",
+                status: "EXPIRED",
+                grade: "B+",
+                instructor: "Abuzer Sajid",
+                verificationUrl: "https://iwantechlabs.com/verify/ITL-CERT-2023-00987"
+            }
+        };
+        
+        function showVerificationMethod(method) {
+            currentVerificationMethod = method;
+            const verificationDiv = document.getElementById('certificateVerification');
+            const qrDiv = document.getElementById('qrVerification');
+            const nameInput = document.getElementById('nameInput');
+            const certIdInput = document.getElementById('certificateId');
+            
+            verificationDiv.style.display = 'block';
+            document.getElementById('verificationResult').innerHTML = '';
+            
+            if (method === 'qr') {
+                qrDiv.style.display = 'block';
+                certIdInput.style.display = 'none';
+                nameInput.style.display = 'none';
+                document.getElementById('verificationForm').style.display = 'none';
+            } else if (method === 'name') {
+                qrDiv.style.display = 'none';
+                certIdInput.style.display = 'none';
+                nameInput.style.display = 'block';
+                document.getElementById('verificationForm').style.display = 'block';
+            } else {
+                qrDiv.style.display = 'none';
+                certIdInput.style.display = 'block';
+                nameInput.style.display = 'none';
+                document.getElementById('verificationForm').style.display = 'block';
+            }
+            
+            // Scroll to verification section
+            document.getElementById('verification').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        function verifyCertificate() {
+            const resultDiv = document.getElementById('verificationResult');
+            let certificate;
+            
+            if (currentVerificationMethod === 'certificate') {
+                const certId = document.getElementById('certificateId').value.trim().toUpperCase();
+                
+                if (!certId) {
+                    showVerificationError('Please enter a certificate ID');
+                    return;
+                }
+                
+                if (!certId.match(/^ITL-CERT-\d{4}-\d{5}$/)) {
+                    showVerificationError('Invalid certificate format. Please use format: ITL-CERT-YYYY-XXXXX');
+                    return;
+                }
+                
+                certificate = certificateDatabase[certId];
+                
+                if (!certificate) {
+                    showVerificationError('Certificate not found in our database. Please check the certificate ID and try again.');
+                    return;
+                }
+            } else if (currentVerificationMethod === 'name') {
+                const name = document.getElementById('candidateName').value.trim();
+                
+                if (!name) {
+                    showVerificationError('Please enter a name to search');
+                    return;
+                }
+                
+                // Find certificate by name (simple search)
+                const foundCert = Object.values(certificateDatabase).find(cert => 
+                    cert.name.toLowerCase().includes(name.toLowerCase())
+                );
+                
+                if (!foundCert) {
+                    showVerificationError(`No certificates found for "${name}". Please check the name and try again.`);
+                    return;
+                }
+                
+                certificate = foundCert;
+            }
+            
+            // Display verification result
+            displayCertificateResult(certificate);
+        }
+        
+        function displayCertificateResult(cert) {
+            const resultDiv = document.getElementById('verificationResult');
+            
+            let statusClass = 'result-valid';
+            let statusIcon = '<i class="fas fa-check-circle"></i>';
+            let statusText = 'Valid Certificate';
+            
+            if (cert.status === 'EXPIRED') {
+                statusClass = 'result-invalid';
+                statusIcon = '<i class="fas fa-exclamation-triangle"></i>';
+                statusText = 'Expired Certificate';
+            } else if (cert.status === 'PENDING') {
+                statusClass = 'result-pending';
+                statusIcon = '<i class="fas fa-clock"></i>';
+                statusText = 'Pending Verification';
+            }
+            
+            const today = new Date();
+            const expiryDate = new Date(cert.expiryDate);
+            if (expiryDate < today && cert.status !== 'EXPIRED') {
+                statusClass = 'result-invalid';
+                statusIcon = '<i class="fas fa-exclamation-triangle"></i>';
+                statusText = 'Certificate Expired';
+            }
+            
+            const issueDate = new Date(cert.issueDate).toLocaleDateString('en-IN', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            const expiryFormatted = new Date(cert.expiryDate).toLocaleDateString('en-IN', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            resultDiv.innerHTML = `
+                <div class="${statusClass}">
+                    <div class="result-header">
+                        <div class="result-icon">
+                            ${statusIcon}
+                        </div>
+                        <div>
+                            <div class="result-title">${statusText}</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8;">Verified: ${new Date().toLocaleDateString()}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="certificate-details">
+                        <div class="detail-row">
+                            <div class="detail-label">Certificate ID:</div>
+                            <div class="detail-value">${cert.id}</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Candidate Name:</div>
+                            <div class="detail-value">${cert.name}</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Training Program:</div>
+                            <div class="detail-value">${cert.program}</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Issue Date:</div>
+                            <div class="detail-value">${issueDate}</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Expiry Date:</div>
+                            <div class="detail-value">${expiryFormatted}</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Grade:</div>
+                            <div class="detail-value">${cert.grade}</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Instructor:</div>
+                            <div class="detail-value">${cert.instructor}</div>
+                        </div>
+                        <div class="detail-row">
+                            <div class="detail-label">Verification URL:</div>
+                            <div class="detail-value">
+                                <a href="${cert.verificationUrl}" style="color: var(--cyber-teal);">${cert.verificationUrl}</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 20px; text-align: center;">
+                        <button onclick="downloadVerificationReport('${cert.id}')" 
+                                style="background: linear-gradient(135deg, var(--electric-blue), var(--neon-purple)); 
+                                       color: white; 
+                                       border: none; 
+                                       padding: 12px 25px; 
+                                       border-radius: 8px; 
+                                       cursor: pointer;
+                                       display: inline-flex;
+                                       align-items: center;
+                                       gap: 10px;">
+                            <i class="fas fa-download"></i> Download Verification Report
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            resultDiv.style.display = 'block';
+        }
+        
+        function showVerificationError(message) {
+            const resultDiv = document.getElementById('verificationResult');
+            resultDiv.innerHTML = `
+                <div class="result-invalid">
+                    <div class="result-header">
+                        <div class="result-icon">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                        <div>
+                            <div class="result-title">Verification Failed</div>
+                        </div>
+                    </div>
+                    <p>${message}</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem;">
+                        <i class="fas fa-info-circle"></i>
+                        Need help? Contact support at iwantechlabs@gmail.com
+                    </p>
+                </div>
+            `;
+            resultDiv.style.display = 'block';
+        }
+        
+        function downloadVerificationReport(certId) {
+            // In production, this would generate a PDF report
+            alert(`Verification report for ${certId} would be downloaded.\n\nIn production, this would generate a PDF verification report.`);
+            
+            // For demo purposes, show a success message
+            const resultDiv = document.getElementById('verificationResult');
+            const existingContent = resultDiv.innerHTML;
+            resultDiv.innerHTML = existingContent + `
+                <div style="margin-top: 15px; padding: 10px; background: rgba(6, 214, 160, 0.1); border-radius: 8px; text-align: center;">
+                    <i class="fas fa-check" style="color: var(--cyber-teal);"></i>
+                    Verification report generated successfully for ${certId}
+                </div>
+            `;
+        }
+        
+        // Check for certificate ID in URL (for QR code redirects)
+        function checkUrlForCertificate() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const certId = urlParams.get('cert');
+            
+            if (certId) {
+                showVerificationMethod('certificate');
+                document.getElementById('certificateId').value = certId;
+                setTimeout(() => verifyCertificate(), 500);
+            }
+        }
+        
+        // Initialize URL check
+        checkUrlForCertificate();
+        
         // Form Submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -1613,10 +2223,21 @@
         
         // Console message
         console.log('IWAN Tech Labs - Cybersecurity Skill Development Initiative');
-        console.log('Website loaded successfully');
+        console.log('Certificate Verification System Active');
         console.log('Training Contact: +91 9611038535 | iwantechlabs@gmail.com');
+        
+        // Initialize verification on page load
+        window.addEventListener('load', function() {
+            // Check if there's a certificate ID in the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('cert')) {
+                setTimeout(() => {
+                    showVerificationMethod('certificate');
+                    document.getElementById('certificateId').value = urlParams.get('cert');
+                    setTimeout(() => verifyCertificate(), 1000);
+                }, 1000);
+            }
+        });
     </script>
 </body>
 </html>
-
-
