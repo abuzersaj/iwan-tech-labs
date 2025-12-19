@@ -8,44 +8,55 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>IWAN Tech Labs | Elite Cybersecurity Training & Internships</title>
+    <title>IWAN Tech Labs | Cybersecurity Training & Internships in Karnataka</title>
 
     <!-- SEO Meta -->
-    <meta name="description" content="IWAN Tech Labs is a premier cybersecurity training institute offering ethical hacking, penetration testing, digital forensics, bug bounty programs, and internships." />
-    <meta name="keywords" content="IWAN Tech Labs, cybersecurity training, ethical hacking course, penetration testing internship, bug bounty training, cybersecurity institute India, cybersecurity training Karnataka, cybersecurity courses Davanagere" />
+    <meta name="description" content="IWAN Tech Labs: Premier cybersecurity training & internship institute in Karnataka. Guaranteed internships in ethical hacking, penetration testing, digital forensics, bug bounty." />
+    <meta name="keywords" content="cybersecurity internship, cybersecurity training with internship, ethical hacking internship, penetration testing internship Karnataka, digital forensics internship, bug bounty internship, IT security internship, cybersecurity institute with internship" />
     <meta name="author" content="IWAN Tech Labs" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph (LinkedIn / WhatsApp Preview) -->
-    <meta property="og:title" content="IWAN Tech Labs | Elite Cybersecurity Training" />
-    <meta property="og:description" content="Professional cybersecurity training, internships, and hands-on programs by industry experts in Karnataka." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="IWAN Tech Labs | Cybersecurity Training & Internships" />
+    <meta property="og:description" content="Guaranteed internships with cybersecurity training. Expert-led programs with hands-on labs and industry certification in Karnataka." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://abuzersaj.github.io/iwan-tech-labs/" />
     <meta property="og:image" content="https://abuzersaj.github.io/iwan-tech-labs/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="IWAN Tech Labs | Cybersecurity Training Institute" />
-    <meta name="twitter:description" content="Expert-led cybersecurity training in Karnataka with hands-on labs and industry certification" />
+    <meta name="twitter:title" content="IWAN Tech Labs | Cybersecurity Internships" />
+    <meta name="twitter:description" content="Guaranteed cybersecurity internships with expert training in Karnataka" />
+    <meta name="twitter:image" content="https://abuzersaj.github.io/iwan-tech-labs/og-image.jpg" />
 
-    <!-- Icons & Fonts -->
+    <!-- Canonical -->
+    <link rel="canonical" href="https://abuzersaj.github.io/iwan-tech-labs/" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo.svg">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Structured Data for SEO -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
       "name": "IWAN Tech Labs",
-      "description": "Premier Cybersecurity Training Institute in Karnataka",
+      "description": "Cybersecurity Training & Internship Institute in Karnataka",
       "url": "https://abuzersaj.github.io/iwan-tech-labs/",
-      "logo": "https://abuzersaj.github.io/iwan-tech-labs/logo.png",
+      "logo": "https://abuzersaj.github.io/iwan-tech-labs/assets/logo.svg",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Hosur",
+        "addressLocality": "Hosur, Channagiri",
         "addressRegion": "Karnataka",
         "postalCode": "577218",
         "addressCountry": "IN"
@@ -62,10 +73,38 @@
         "name": "Abuzer Sajid Ahamad Umri",
         "jobTitle": "Founder & Lead Security Consultant"
       },
-      "offers": {
-        "@type": "Offer",
-        "category": "Cybersecurity Training"
-      }
+      "course": [
+        {
+          "@type": "Course",
+          "name": "Penetration Testing Internship Program",
+          "description": "Hands-on penetration testing training with guaranteed internship",
+          "offers": {
+            "@type": "Offer",
+            "price": "14999",
+            "priceCurrency": "INR"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Digital Forensics Internship Program",
+          "description": "Digital forensics training with real case study internship",
+          "offers": {
+            "@type": "Offer",
+            "price": "14999",
+            "priceCurrency": "INR"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Bug Bounty Internship Track",
+          "description": "Bug bounty training with internship and mentorship",
+          "offers": {
+            "@type": "Offer",
+            "price": "9999",
+            "priceCurrency": "INR"
+          }
+        }
+      ]
     }
     </script>
 
@@ -105,7 +144,7 @@
             padding: 0 20px;
         }
         
-        /* Header & Navigation */
+        /* Header */
         .main-header {
             background: rgba(10, 10, 15, 0.95);
             backdrop-filter: blur(20px);
@@ -142,22 +181,6 @@
             font-size: 24px;
             font-weight: 800;
             color: white;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .logo::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
-            animation: shine 3s infinite linear;
-        }
-        
-        @keyframes shine {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
         }
         
         .brand-name {
@@ -359,7 +382,7 @@
             margin-bottom: 80px;
         }
         
-        /* Modern Program Card */
+        /* Program Card */
         .program-card {
             background: var(--card-bg);
             border-radius: 20px;
@@ -636,7 +659,7 @@
             line-height: 1.6;
         }
         
-        /* Modern Contact Form */
+        /* Contact Form */
         .contact-form-container {
             background: var(--card-bg);
             border-radius: 25px;
@@ -697,7 +720,6 @@
             box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.1);
         }
         
-        /* CRITICAL FIX - Floating Labels */
         .form-input:focus + .form-label,
         .form-input:not(:placeholder-shown) + .form-label,
         .form-textarea:focus + .form-label,
@@ -876,11 +898,6 @@
             visibility: visible;
         }
         
-        .back-to-top:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
-        }
-        
         /* Responsive Design */
         @media (max-width: 1200px) {
             .hero-title {
@@ -995,7 +1012,7 @@
             
             <nav class="nav-links">
                 <a href="#programs" class="nav-link">Programs</a>
-                <a href="#about" class="nav-link">Methodology</a>
+                <a href="#internships" class="nav-link">Internships</a>
                 <a href="#success" class="nav-link">Success</a>
                 <a href="#resources" class="nav-link">Resources</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -1014,31 +1031,30 @@
         <div class="container hero-container">
             <div class="hero-badge">
                 <i class="fas fa-shield-alt"></i>
-                <span>ELITE CYBERSECURITY TRAINING</span>
+                <span>CYBERSECURITY TRAINING & INTERNSHIPS</span>
             </div>
             
             <h1 class="hero-title">
-                Forge Your Career in 
-                <span style="display: block; color: var(--cyber-teal);">Cybersecurity Excellence</span>
+                Launch Your Career with 
+                <span style="display: block; color: var(--cyber-teal);">Guaranteed Internships</span>
             </h1>
             
             <p class="hero-subtitle">
-                Master cutting-edge security technologies through immersive training programs designed 
-                by industry experts. Transform your career with hands-on experience and professional certification.
+                Master cutting-edge security technologies through immersive training and industry-aligned internships designed by experts. Transform your career with hands-on experience and professional certification.
             </p>
             
             <div class="hero-stats">
                 <div class="stat-item">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Placement Success</div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Internship Placement</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">1K+</div>
-                    <div class="stat-label">Professionals Trained</div>
+                    <div class="stat-label">Students Placed</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">50+</div>
-                    <div class="stat-label">Industry Partners</div>
+                    <div class="stat-label">Partner Companies</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">24/7</div>
@@ -1052,11 +1068,10 @@
     <section id="programs" class="programs-section">
         <div class="container">
             <div class="section-header">
-                <div class="section-subtitle">EXPERT-LED PROGRAMS</div>
-                <h2 class="section-title">Specialized Cybersecurity Training</h2>
+                <div class="section-subtitle">GUARANTEED INTERNSHIP PROGRAMS</div>
+                <h2 class="section-title">Training + Internship Programs</h2>
                 <p class="section-description">
-                    Choose from our comprehensive curriculum designed to equip you with practical skills 
-                    and industry-recognized certifications.
+                    Choose from our comprehensive cybersecurity programs with guaranteed internships. Get industry certification and real-world experience simultaneously.
                 </p>
             </div>
             
@@ -1068,13 +1083,12 @@
                             <div class="program-icon icon-blue">
                                 <i class="fas fa-crosshairs"></i>
                             </div>
-                            <span class="program-badge badge-demand">HIGH DEMAND</span>
+                            <span class="program-badge badge-demand">GUARANTEED INTERNSHIP</span>
                         </div>
                         
-                        <h3 class="program-title">Offensive Security & Penetration Testing</h3>
+                        <h3 class="program-title">Penetration Testing Internship Program</h3>
                         <p class="program-description">
-                            Master ethical hacking methodologies, vulnerability assessment, and penetration 
-                            testing techniques through real-world simulations and hands-on labs.
+                            Master ethical hacking methodologies with guaranteed internship placement. Get hands-on experience in vulnerability assessment and penetration testing.
                         </p>
                         
                         <div class="features-list">
@@ -1084,7 +1098,7 @@
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
-                                <span>Industry Internship Placement</span>
+                                <span>Guaranteed Internship Certificate</span>
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
@@ -1092,17 +1106,17 @@
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
-                                <span>Career Placement Assistance</span>
+                                <span>Industry Internship Placement</span>
                             </div>
                         </div>
                         
                         <div class="card-footer">
                             <div class="price-info">
-                                <div class="duration">6 Months Intensive Program</div>
-                                <div class="price">₹20,000<span>/course</span></div>
+                                <div class="duration">6 Months Training + Internship</div>
+                                <div class="price">₹14,999<span>/complete</span></div>
                             </div>
-                            <button class="cta-button" onclick="enrollProgram('Penetration Testing')">
-                                <i class="fas fa-lock"></i> Enroll Now
+                            <button class="cta-button" onclick="enrollProgram('Penetration Testing Internship')">
+                                <i class="fas fa-lock"></i> Apply for Internship
                             </button>
                         </div>
                     </div>
@@ -1115,13 +1129,12 @@
                             <div class="program-icon icon-teal">
                                 <i class="fas fa-search"></i>
                             </div>
-                            <span class="program-badge badge-comprehensive">COMPREHENSIVE</span>
+                            <span class="program-badge badge-comprehensive">CASE-BASED INTERNSHIP</span>
                         </div>
                         
-                        <h3 class="program-title">Digital Forensics & Incident Response</h3>
+                        <h3 class="program-title">Digital Forensics Internship Program</h3>
                         <p class="program-description">
-                            Become an expert in digital forensics, cyber crime investigation, and incident 
-                            response with comprehensive training on legal frameworks and investigative procedures.
+                            Become an expert in digital forensics with real case study internship. Learn cyber crime investigation and incident response procedures.
                         </p>
                         
                         <div class="features-list">
@@ -1131,7 +1144,7 @@
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
-                                <span>Incident Response Procedures</span>
+                                <span>Case-Based Internship Training</span>
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
@@ -1145,11 +1158,11 @@
                         
                         <div class="card-footer">
                             <div class="price-info">
-                                <div class="duration">6 Months Comprehensive Program</div>
-                                <div class="price">₹14,999<span>/course</span></div>
+                                <div class="duration">6 Months Training + Internship</div>
+                                <div class="price">₹14,999<span>/complete</span></div>
                             </div>
-                            <button class="cta-button" onclick="enrollProgram('Digital Forensics')">
-                                <i class="fas fa-lock"></i> Enroll Now
+                            <button class="cta-button" onclick="enrollProgram('Digital Forensics Internship')">
+                                <i class="fas fa-lock"></i> Apply for Internship
                             </button>
                         </div>
                     </div>
@@ -1162,13 +1175,12 @@
                             <div class="program-icon icon-purple">
                                 <i class="fas fa-bug"></i>
                             </div>
-                            <span class="program-badge badge-fast">FAST-TRACK</span>
+                            <span class="program-badge badge-fast">FAST-TRACK INTERNSHIP</span>
                         </div>
                         
-                        <h3 class="program-title">Bug Bounty & Application Security</h3>
+                        <h3 class="program-title">Bug Bounty Internship Track</h3>
                         <p class="program-description">
-                            Specialize in web and mobile application security testing with professional 
-                            bug bounty training focused on vulnerability discovery and responsible disclosure.
+                            Specialize in web and mobile application security with bug bounty internship. Learn vulnerability discovery and responsible disclosure process.
                         </p>
                         
                         <div class="features-list">
@@ -1182,7 +1194,7 @@
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
-                                <span>Responsible Disclosure Process</span>
+                                <span>Bug Bounty Internship & Mentorship</span>
                             </div>
                             <div class="feature-item">
                                 <div class="feature-check"><i class="fas fa-check"></i></div>
@@ -1192,13 +1204,61 @@
                         
                         <div class="card-footer">
                             <div class="price-info">
-                                <div class="duration">3 Months Intensive Program</div>
-                                <div class="price">₹9,000<span>/course</span></div>
+                                <div class="duration">3 Months Training + Internship</div>
+                                <div class="price">₹9,999<span>/complete</span></div>
                             </div>
-                            <button class="cta-button" onclick="enrollProgram('Bug Bounty')">
-                                <i class="fas fa-lock"></i> Enroll Now
+                            <button class="cta-button" onclick="enrollProgram('Bug Bounty Internship')">
+                                <i class="fas fa-lock"></i> Apply for Internship
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Internship Benefits Section -->
+    <section id="internships" class="programs-section" style="background: var(--navy-blue);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">INTERNSHIP BENEFITS</div>
+                <h2 class="section-title">Why Choose Our Internship Programs?</h2>
+            </div>
+            
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="card-content">
+                        <div class="program-icon" style="background: linear-gradient(135deg, #2563EB, #06D6A0);">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="program-title">Industry-Recognized Certificate</h3>
+                        <p class="program-description">
+                            Get certified by IWAN Tech Labs and receive internship completion certificate recognized by IT companies.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="card-content">
+                        <div class="program-icon" style="background: linear-gradient(135deg, #06D6A0, #8338EC);">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="program-title">Real-World Projects</h3>
+                        <p class="program-description">
+                            Work on live cybersecurity projects and gain hands-on experience that impresses employers.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="card-content">
+                        <div class="program-icon" style="background: linear-gradient(135deg, #8338EC, #2563EB);">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3 class="program-title">Mentorship & Guidance</h3>
+                        <p class="program-description">
+                            Get 1:1 mentorship from industry experts and guidance throughout your internship journey.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1209,11 +1269,10 @@
     <section id="contact" class="contact-section">
         <div class="container contact-container">
             <div class="contact-info">
-                <h2 class="contact-title">Get in Touch with <span>IWAN Tech Labs</span></h2>
+                <h2 class="contact-title">Apply for <span>Internship Now</span></h2>
                 <p class="contact-description">
-                    Ready to advance your cybersecurity career? Contact us for program details, 
-                    enrollment information, or career guidance. Our team of experts is here to 
-                    help you succeed.
+                    Ready to start your cybersecurity career with guaranteed internship? Contact us for program details, 
+                    internship information, or career guidance.
                 </p>
                 
                 <div class="contact-details">
@@ -1222,7 +1281,7 @@
                             <div class="detail-icon">
                                 <i class="fas fa-user-tie"></i>
                             </div>
-                            <div class="detail-title">Founder & Lead Instructor</div>
+                            <div class="detail-title">Internship Coordinator</div>
                         </div>
                         <div class="detail-content">
                             <p>Abuzer Sajid Ahamad Umri</p>
@@ -1236,7 +1295,7 @@
                             <div class="detail-icon">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
-                            <div class="detail-title">Direct Contact</div>
+                            <div class="detail-title">Internship Inquiry</div>
                         </div>
                         <div class="detail-content">
                             <p><strong>Phone:</strong> +91 9611038535</p>
@@ -1253,7 +1312,7 @@
                             <div class="detail-title">Email Communications</div>
                         </div>
                         <div class="detail-content">
-                            <p><strong>General Inquiries:</strong> iwantechlabs@gmail.com</p>
+                            <p><strong>Internship Inquiries:</strong> iwantechlabs@gmail.com</p>
                             <p><strong>Admissions:</strong> iwantechlabs@gmail.com</p>
                             <p><strong>Support:</strong> iwantechlabs@gmail.com</p>
                         </div>
@@ -1262,8 +1321,8 @@
             </div>
             
             <div class="contact-form-container">
-                <h3 class="form-title">Enrollment Inquiry</h3>
-                <p class="form-subtitle">Complete the form below and our admissions team will contact you within 24 hours.</p>
+                <h3 class="form-title">Internship Application</h3>
+                <p class="form-subtitle">Fill this form and we'll contact you within 24 hours for internship details.</p>
                 
                 <form class="modern-form" id="contactForm">
                     <div class="form-group">
@@ -1283,21 +1342,21 @@
                     
                     <div class="form-group">
                         <select id="program" class="form-select">
-                            <option value="">Select Program of Interest</option>
-                            <option value="penetration">Penetration Testing - ₹20,000</option>
-                            <option value="forensics">Digital Forensics - ₹14,999</option>
-                            <option value="bug-bounty">Bug Bounty - ₹9,000</option>
+                            <option value="">Select Internship Program *</option>
+                            <option value="penetration">Penetration Testing Internship</option>
+                            <option value="forensics">Digital Forensics Internship</option>
+                            <option value="bug-bounty">Bug Bounty Internship</option>
                             <option value="consultation">Career Consultation</option>
                         </select>
                     </div>
                     
                     <div class="form-group">
                         <textarea id="message" class="form-textarea" placeholder=" " required></textarea>
-                        <label for="message" class="form-label">Your Message / Background *</label>
+                        <label for="message" class="form-label">Your Background / Why Internship? *</label>
                     </div>
                     
                     <button type="submit" class="submit-button">
-                        <i class="fas fa-paper-plane"></i> Submit Enrollment Request
+                        <i class="fas fa-paper-plane"></i> Submit Internship Application
                     </button>
                 </form>
             </div>
@@ -1314,16 +1373,16 @@
                         <div class="footer-brand">IWAN TECH LABS</div>
                     </div>
                     <p class="footer-description">
-                        Premier cybersecurity training institute delivering cutting-edge 
-                        education through expert-led programs and hands-on experience.
+                        Premier cybersecurity training & internship institute delivering cutting-edge 
+                        education through expert-led programs and real-world experience.
                     </p>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#programs">Training Programs</a></li>
-                        <li><a href="#methodology">Learning Methodology</a></li>
+                        <li><a href="#programs">Internship Programs</a></li>
+                        <li><a href="#internships">Internship Benefits</a></li>
                         <li><a href="#success">Success Stories</a></li>
                         <li><a href="#resources">Learning Resources</a></li>
                         <li><a href="#contact">Contact Us</a></li>
@@ -1331,18 +1390,18 @@
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Training Programs</h3>
+                    <h3>Internship Programs</h3>
                     <ul class="footer-links">
-                        <li><a href="#programs">Penetration Testing</a></li>
-                        <li><a href="#programs">Digital Forensics</a></li>
-                        <li><a href="#programs">Bug Bounty</a></li>
-                        <li><a href="#programs">Cloud Security</a></li>
-                        <li><a href="#programs">Security Analytics</a></li>
+                        <li><a href="#programs">Penetration Testing Internship</a></li>
+                        <li><a href="#programs">Digital Forensics Internship</a></li>
+                        <li><a href="#programs">Bug Bounty Internship</a></li>
+                        <li><a href="#programs">Cloud Security Internship</a></li>
+                        <li><a href="#programs">Security Analytics Internship</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Contact Information</h3>
+                    <h3>Internship Office</h3>
                     <ul class="footer-links">
                         <li><i class="fas fa-phone" style="margin-right: 10px; color: var(--cyber-teal);"></i> +91 9611038535</li>
                         <li><i class="fas fa-envelope" style="margin-right: 10px; color: var(--cyber-teal);"></i> iwantechlabs@gmail.com</li>
@@ -1353,14 +1412,14 @@
             </div>
             
             <div class="copyright">
-                <p>© 2024 IWAN Tech Labs. All Rights Reserved. | Elite Cybersecurity Training Institute</p>
-                <p class="founder-note">Founded by Abuzer Sajid Ahamad Umri | 2+ Years Industry Experience</p>
+                <p>© 2024 IWAN Tech Labs. All Rights Reserved. | Cybersecurity Training & Internship Institute</p>
+                <p class="founder-note">Internship Programs by Abuzer Sajid Ahamad Umri | 2+ Years Industry Experience</p>
             </div>
         </div>
     </footer>
     
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/919611038535" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <a href="https://wa.me/919611038535?text=Hello%20IWAN%20Tech%20Labs!%20I'm%20interested%20in%20cybersecurity%20internship%20programs." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -1382,20 +1441,20 @@
             const message = document.getElementById('message').value;
             
             // Validate form
-            if (!name || !email || !message) {
-                alert('Please fill all required fields (Name, Email, Message)');
+            if (!name || !email || !message || !program) {
+                alert('Please fill all required fields (Name, Email, Internship Program, Background)');
                 return;
             }
             
             // Create WhatsApp message
-            const whatsappMessage = `🎯 *IWAN Tech Labs - Enrollment Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Program:* ${program}%0A%0A*Message:*%0A${message}%0A%0A*Submitted via Website Form*`;
+            const whatsappMessage = `🎯 *IWAN Tech Labs - Internship Application*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Internship Program:* ${program}%0A%0A*Background:*%0A${message}%0A%0A*Submitted via Website Form*`;
             
             // Open WhatsApp
             window.open(`https://wa.me/919611038535?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
             
             // Show success message
             setTimeout(() => {
-                alert(`Thank you ${name}! Your enrollment inquiry has been submitted.\n\nWe will contact you within 24 hours to discuss the ${program} program.`);
+                alert(`Thank you ${name}! Your internship application has been submitted.\n\nWe will contact you within 24 hours to discuss the ${program} program.`);
             }, 500);
             
             // Reset form
@@ -1560,37 +1619,10 @@
             });
         });
         
-        // Mobile menu toggle (for future responsive menu)
-        function initMobileMenu() {
-            const menuToggle = document.createElement('button');
-            menuToggle.className = 'mobile-menu-toggle';
-            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-            menuToggle.style.cssText = `
-                display: none;
-                background: none;
-                border: none;
-                color: var(--light-gray);
-                font-size: 1.5rem;
-                cursor: pointer;
-            `;
-            
-            document.querySelector('.header-container').appendChild(menuToggle);
-            
-            // Show on mobile
-            if (window.innerWidth <= 768) {
-                menuToggle.style.display = 'block';
-                document.querySelector('.nav-links').style.display = 'none';
-            }
-        }
-        
-        // Initialize on load
-        window.addEventListener('load', initMobileMenu);
-        window.addEventListener('resize', initMobileMenu);
-        
         // Console message
-        console.log('IWAN Tech Labs - Cybersecurity Training Institute');
+        console.log('IWAN Tech Labs - Cybersecurity Training & Internship Institute');
         console.log('Website loaded successfully');
-        console.log('Contact: +91 9611038535 | iwantechlabs@gmail.com');
+        console.log('Internship Contact: +91 9611038535 | iwantechlabs@gmail.com');
     </script>
 </body>
 </html>
