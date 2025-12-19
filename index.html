@@ -1,21 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
     <meta charset="UTF-8">
 
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="Pw-Ev3BWWccBKtlH_5_XccViEJkhlGLpg3dp_dFQwfo" />
-    <meta charset="UTF-8">
-        
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IWAN Tech Labs | Elite Cybersecurity Training</title>
+
+    <title>IWAN Tech Labs | Elite Cybersecurity Training & Internships</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="IWAN Tech Labs is a premier cybersecurity training institute offering ethical hacking, penetration testing, digital forensics, bug bounty programs, and internships." />
+    <meta name="keywords" content="IWAN Tech Labs, cybersecurity training, ethical hacking course, penetration testing internship, bug bounty training, cybersecurity institute India, cybersecurity training Karnataka, cybersecurity courses Davanagere" />
+    <meta name="author" content="IWAN Tech Labs" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (LinkedIn / WhatsApp Preview) -->
+    <meta property="og:title" content="IWAN Tech Labs | Elite Cybersecurity Training" />
+    <meta property="og:description" content="Professional cybersecurity training, internships, and hands-on programs by industry experts in Karnataka." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abuzersaj.github.io/iwan-tech-labs/" />
+    <meta property="og:image" content="https://abuzersaj.github.io/iwan-tech-labs/og-image.jpg" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IWAN Tech Labs | Cybersecurity Training Institute" />
+    <meta name="twitter:description" content="Expert-led cybersecurity training in Karnataka with hands-on labs and industry certification" />
+
+    <!-- Icons & Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "IWAN Tech Labs",
+      "description": "Premier Cybersecurity Training Institute in Karnataka",
+      "url": "https://abuzersaj.github.io/iwan-tech-labs/",
+      "logo": "https://abuzersaj.github.io/iwan-tech-labs/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hosur",
+        "addressRegion": "Karnataka",
+        "postalCode": "577218",
+        "addressCountry": "IN"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9611038535",
+        "contactType": "customer service",
+        "email": "iwantechlabs@gmail.com",
+        "availableLanguage": ["English", "Hindi", "Kannada"]
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Abuzer Sajid Ahamad Umri",
+        "jobTitle": "Founder & Lead Security Consultant"
+      },
+      "offers": {
+        "@type": "Offer",
+        "category": "Cybersecurity Training"
+      }
+    }
+    </script>
+
+<style>
         :root {
             --primary-black: #0A0A0F;
             --dark-navy: #16162B;
@@ -29,13 +83,13 @@
             --card-bg: rgba(26, 27, 62, 0.85);
             --card-border: rgba(99, 102, 241, 0.2);
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
         }
-        
+
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: var(--primary-black);
@@ -43,7 +97,7 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-        
+
         .container {
             max-width: 1400px;
             width: 100%;
@@ -61,6 +115,7 @@
             width: 100%;
             z-index: 1000;
             padding: 20px 0;
+            transition: all 0.3s ease;
         }
         
         .header-container {
@@ -642,11 +697,14 @@
             box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.1);
         }
         
+        /* CRITICAL FIX - Floating Labels */
         .form-input:focus + .form-label,
-        .form-input:not(:placeholder-shown) + .form-label {
+        .form-input:not(:placeholder-shown) + .form-label,
+        .form-textarea:focus + .form-label,
+        .form-textarea:not(:placeholder-shown) + .form-label {
             top: -10px;
             left: 10px;
-            font-size = 0.85rem;
+            font-size: 0.85rem;
             background: var(--card-bg);
             padding: 0 10px;
             color: var(--cyber-teal);
@@ -791,6 +849,38 @@
             box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
         }
         
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--electric-blue), var(--neon-purple));
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+        }
+        
         /* Responsive Design */
         @media (max-width: 1200px) {
             .hero-title {
@@ -858,6 +948,11 @@
                 height: 55px;
                 font-size: 28px;
                 bottom: 20px;
+                right: 20px;
+            }
+            
+            .back-to-top {
+                bottom: 90px;
                 right: 20px;
             }
         }
@@ -942,11 +1037,11 @@
                     <div class="stat-label">Professionals Trained</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">1K+</div>
-                    <div class="stat-label">Corporate Partners</div>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Industry Partners</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">1K+</div>
+                    <div class="stat-number">24/7</div>
                     <div class="stat-label">Lab Access</div>
                 </div>
             </div>
@@ -1131,7 +1226,8 @@
                         </div>
                         <div class="detail-content">
                             <p>Abuzer Sajid Ahamad Umri</p>
-                            <p>2+ years cybersecurity experience, Former Chief Security Officer</p>
+                            <p>2+ years cybersecurity experience</p>
+                            <p>Certified Ethical Hacker</p>
                         </div>
                     </div>
                     
@@ -1188,9 +1284,9 @@
                     <div class="form-group">
                         <select id="program" class="form-select">
                             <option value="">Select Program of Interest</option>
-                            <option value="penetration">Penetration Testing - ₹1,49,999</option>
-                            <option value="forensics">Digital Forensics - ₹1,49,999</option>
-                            <option value="bug-bounty">Bug Bounty - ₹99,999</option>
+                            <option value="penetration">Penetration Testing - ₹20,000</option>
+                            <option value="forensics">Digital Forensics - ₹14,999</option>
+                            <option value="bug-bounty">Bug Bounty - ₹9,000</option>
                             <option value="consultation">Career Consultation</option>
                         </select>
                     </div>
@@ -1257,8 +1353,8 @@
             </div>
             
             <div class="copyright">
-                <p>© 2023 IWAN Tech Labs. All Rights Reserved. | Elite Cybersecurity Training Institute</p>
-                <p class="founder-note">Founded by Abuzer Sajid | 2+ Years Industry Experience</p>
+                <p>© 2024 IWAN Tech Labs. All Rights Reserved. | Elite Cybersecurity Training Institute</p>
+                <p class="founder-note">Founded by Abuzer Sajid Ahamad Umri | 2+ Years Industry Experience</p>
             </div>
         </div>
     </footer>
@@ -1267,6 +1363,11 @@
     <a href="https://wa.me/919611038535" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script>
         // Form Submission
@@ -1279,6 +1380,12 @@
             const phone = document.getElementById('phone').value || 'Not provided';
             const program = document.getElementById('program').value || 'Not specified';
             const message = document.getElementById('message').value;
+            
+            // Validate form
+            if (!name || !email || !message) {
+                alert('Please fill all required fields (Name, Email, Message)');
+                return;
+            }
             
             // Create WhatsApp message
             const whatsappMessage = `🎯 *IWAN Tech Labs - Enrollment Inquiry*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Program:* ${program}%0A%0A*Message:*%0A${message}%0A%0A*Submitted via Website Form*`;
@@ -1296,15 +1403,20 @@
             
             // Reset floating labels
             document.querySelectorAll('.form-input, .form-textarea').forEach(input => {
-                input.nextElementSibling.style.top = '18px';
-                input.nextElementSibling.style.fontSize = '1rem';
-                input.nextElementSibling.style.background = 'transparent';
-                input.nextElementSibling.style.color = 'var(--medium-gray)';
+                const label = input.nextElementSibling;
+                if (label && label.classList.contains('form-label')) {
+                    label.style.top = '18px';
+                    label.style.left = '20px';
+                    label.style.fontSize = '1rem';
+                    label.style.background = 'transparent';
+                    label.style.padding = '0';
+                    label.style.color = 'var(--medium-gray)';
+                }
             });
         });
         
         // Floating label functionality
-        document.querySelectorAll('.form-input, .form-textarea, .form-select').forEach(input => {
+        document.querySelectorAll('.form-input, .form-textarea').forEach(input => {
             input.addEventListener('focus', function() {
                 const label = this.nextElementSibling;
                 if (label && label.classList.contains('form-label')) {
@@ -1328,19 +1440,6 @@
                     label.style.color = 'var(--medium-gray)';
                 }
             });
-            
-            // Initialize labels for pre-filled values
-            if (input.value) {
-                const label = input.nextElementSibling;
-                if (label && label.classList.contains('form-label')) {
-                    label.style.top = '-10px';
-                    label.style.left = '10px';
-                    label.style.fontSize = '0.85rem';
-                    label.style.background = 'var(--card-bg)';
-                    label.style.padding = '0 10px';
-                    label.style.color = 'var(--cyber-teal)';
-                }
-            }
         });
         
         // Enroll button functionality
@@ -1359,11 +1458,6 @@
             
             // Focus on name field
             document.getElementById('fullName').focus();
-            
-            // Show notification
-            setTimeout(() => {
-                alert(`You've selected: ${programName}\n\nPlease complete the enrollment form to proceed with your application.`);
-            }, 300);
         }
         
         // Animate stats on scroll
@@ -1371,10 +1465,9 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const stat = entry.target;
-                    const value = parseInt(stat.textContent);
                     if (!stat.classList.contains('animated')) {
                         stat.classList.add('animated');
-                        animateValue(stat, 0, value, 1500);
+                        animateValue(stat);
                     }
                 }
             });
@@ -1382,22 +1475,43 @@
         
         document.querySelectorAll('.stat-number').forEach(stat => observer.observe(stat));
         
-        function animateValue(element, start, end, duration) {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const value = Math.floor(progress * (end - start) + start);
-                if (element.textContent.includes('%')) {
+        function animateValue(element) {
+            const text = element.textContent;
+            let target;
+            
+            if (text.includes('%')) {
+                target = parseInt(text);
+            } else if (text.includes('K+')) {
+                target = parseInt(text) * 1000;
+            } else if (text.includes('+')) {
+                target = parseInt(text);
+            } else {
+                return;
+            }
+            
+            let start = 0;
+            const duration = 1500;
+            const startTime = performance.now();
+            
+            function update(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const value = Math.floor(progress * target);
+                
+                if (text.includes('%')) {
                     element.textContent = value + '%';
-                } else if (element.textContent.includes('K+')) {
-                    element.textContent = value + 'K+';
+                } else if (text.includes('K+')) {
+                    element.textContent = Math.floor(value / 1000) + 'K+';
+                } else if (text.includes('+')) {
+                    element.textContent = value + '+';
                 }
+                
                 if (progress < 1) {
-                    window.requestAnimationFrame(step);
+                    requestAnimationFrame(update);
                 }
-            };
-            window.requestAnimationFrame(step);
+            }
+            
+            requestAnimationFrame(update);
         }
         
         // Smooth scroll for navigation
@@ -1408,7 +1522,10 @@
                 if (targetId !== '#') {
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
-                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        targetElement.scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
                     }
                 }
             });
@@ -1417,6 +1534,8 @@
         // Add header scroll effect
         window.addEventListener('scroll', function() {
             const header = document.querySelector('.main-header');
+            const backToTop = document.querySelector('.back-to-top');
+            
             if (window.scrollY > 100) {
                 header.style.background = 'rgba(10, 10, 15, 0.98)';
                 header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.2)';
@@ -1424,9 +1543,54 @@
                 header.style.background = 'rgba(10, 10, 15, 0.95)';
                 header.style.boxShadow = 'none';
             }
+            
+            // Show/hide back to top button
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
         });
+        
+        // Back to top functionality
+        document.querySelector('.back-to-top').addEventListener('click', () => {
+            window.scrollTo({ 
+                top: 0, 
+                behavior: 'smooth' 
+            });
+        });
+        
+        // Mobile menu toggle (for future responsive menu)
+        function initMobileMenu() {
+            const menuToggle = document.createElement('button');
+            menuToggle.className = 'mobile-menu-toggle';
+            menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            menuToggle.style.cssText = `
+                display: none;
+                background: none;
+                border: none;
+                color: var(--light-gray);
+                font-size: 1.5rem;
+                cursor: pointer;
+            `;
+            
+            document.querySelector('.header-container').appendChild(menuToggle);
+            
+            // Show on mobile
+            if (window.innerWidth <= 768) {
+                menuToggle.style.display = 'block';
+                document.querySelector('.nav-links').style.display = 'none';
+            }
+        }
+        
+        // Initialize on load
+        window.addEventListener('load', initMobileMenu);
+        window.addEventListener('resize', initMobileMenu);
+        
+        // Console message
+        console.log('IWAN Tech Labs - Cybersecurity Training Institute');
+        console.log('Website loaded successfully');
+        console.log('Contact: +91 9611038535 | iwantechlabs@gmail.com');
     </script>
 </body>
 </html>
-
-
