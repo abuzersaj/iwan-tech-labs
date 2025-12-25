@@ -71,7 +71,42 @@
       "founder": {
         "@type": "Person",
         "name": "Abuzer Sajid",
-        "jobTitle": "Skill Development Mentor"
+        "jobTitle": "Skill Development Mentor",
+        "hasCredential": [
+          "CEH (Certified Ethical Hacker)",
+          "CRTOM (Certified Red Team Operations Management)",
+          "CRTA (Cyber Red Team Associate)",
+          "CCEP (Certified Cybersecurity Educator Professional)",
+          "Offensive Security Junior",
+          "AWS Certified Security Specialist",
+          "AWS Cloud Practitioner Essentials",
+          "Azure Security Technologies",
+          "CECB (Certified Encryption & Cryptography Beginner)",
+          "Junior Cybersecurity Analyst",
+          "LLM Security Testing",
+          "Malware Analysis",
+          "Core Networking Concepts for Ethical Hackers",
+          "AI Prompt Engineering: From Basics to Mastery",
+          "Android Malware Analysis",
+          "Certified DevOps Professional",
+          "ISO/IEC 27001:2022 Lead Auditor",
+          "Mobile App Pentesting & Bug Bounty Hunting",
+          "Multicloud Network Associate",
+          "Pentesting 101",
+          "AI Governance Certification",
+          "Oracle Certified Networking Professional",
+          "VAPT",
+          "Website Hacking & Penetration Testing",
+          "Ransomware Protection & Defense",
+          "Python & Java Programming",
+          "Cybersecurity (The Red Users)",
+          "Web Application Security / Google Hacking",
+          "API Penetration Testing",
+          "ISC2 Candidate",
+          "Advanced OSINT & Privacy",
+          "CLM Certified System Engineer",
+          "Certified SME Cyber Security Officer"
+        ]
       },
       "course": [
         {
@@ -1556,17 +1591,25 @@
         .certification-badges {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px;
             margin: 25px 0;
         }
         
         .cert-badge {
             background: rgba(6, 214, 160, 0.1);
             border: 1px solid rgba(6, 214, 160, 0.3);
-            padding: 10px 20px;
-            border-radius: 8px;
+            padding: 8px 15px;
+            border-radius: 6px;
             color: var(--cyber-teal);
             font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cert-badge:hover {
+            transform: translateY(-2px);
+            background: rgba(6, 214, 160, 0.2);
+            box-shadow: 0 5px 15px rgba(6, 214, 160, 0.2);
         }
         
         /* Certificate Verification Section */
@@ -2372,6 +2415,15 @@
             
             .feature-card-title {
                 font-size: 1.2rem;
+            }
+            
+            .certification-badges {
+                gap: 8px;
+            }
+            
+            .cert-badge {
+                padding: 6px 12px;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -3209,7 +3261,9 @@
                         <div class="detail-content">
                             <p>Abuzer Sajid</p>
                             <p>Cybersecurity Skill Development Mentor</p>
-                            <p>Certified Ethical Hacker</p>
+                            <p style="color: var(--cyber-teal); font-weight: 600;">
+                                <i class="fas fa-certificate"></i> 35+ Cybersecurity Certifications
+                            </p>
                         </div>
                     </div>
                     
@@ -3349,7 +3403,7 @@
             
             <div class="copyright">
                 <p>© 2024 IWAN Tech Labs. All Rights Reserved. | Cybersecurity Skill Development Initiative</p>
-                <p class="founder-note">Training Programs by Abuzer Sajid | Rural Karnataka Focus | Practical Skill Development</p>
+                <p class="founder-note">Training Programs by Abuzer Sajid (35+ Cybersecurity Certifications) | Rural Karnataka Focus | Practical Skill Development</p>
                 
                 <!-- FINAL SAFE DISCLAIMER -->
                 <div style="margin-top: 20px; font-size: 0.85rem; color: var(--medium-gray); line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto;">
@@ -3517,11 +3571,44 @@
                             <p class="content-text">
                                 With certifications including CEH (Certified Ethical Hacker), Abuzer focuses on making cybersecurity accessible to rural students. His teaching methodology emphasizes practical learning and confidence building.
                             </p>
+                            
+                            <!-- Updated Certification Badges -->
                             <div class="certification-badges">
-                                <div class="cert-badge">CEH Certified</div>
-                                <div class="cert-badge">Practical Trainer</div>
-                                <div class="cert-badge">Rural Education Specialist</div>
+                                <div class="cert-badge">CEH (Certified Ethical Hacker)</div>
+                                <div class="cert-badge">CRTOM</div>
+                                <div class="cert-badge">CRTA</div>
+                                <div class="cert-badge">CCEP</div>
+                                <div class="cert-badge">Offensive Security Junior</div>
+                                <div class="cert-badge">AWS Security Specialist</div>
+                                <div class="cert-badge">AWS Cloud Practitioner</div>
+                                <div class="cert-badge">Azure Security</div>
+                                <div class="cert-badge">CECB</div>
+                                <div class="cert-badge">Junior Cybersecurity Analyst</div>
+                                <div class="cert-badge">LLM Security Testing</div>
+                                <div class="cert-badge">Malware Analysis</div>
+                                <div class="cert-badge">Core Networking Concepts</div>
+                                <div class="cert-badge">AI Prompt Engineering</div>
+                                <div class="cert-badge">Android Malware Analysis</div>
+                                <div class="cert-badge">Certified DevOps Professional</div>
+                                <div class="cert-badge">ISO/IEC 27001:2022 Lead Auditor</div>
+                                <div class="cert-badge">Mobile App Pentesting</div>
+                                <div class="cert-badge">Multicloud Network Associate</div>
+                                <div class="cert-badge">Pentesting 101</div>
+                                <div class="cert-badge">AI Governance</div>
+                                <div class="cert-badge">Oracle Certified Networking</div>
+                                <div class="cert-badge">VAPT</div>
+                                <div class="cert-badge">Website Hacking & Penetration Testing</div>
+                                <div class="cert-badge">Ransomware Protection & Defense</div>
+                                <div class="cert-badge">Python & Java Programming</div>
+                                <div class="cert-badge">Cybersecurity (The Red Users)</div>
+                                <div class="cert-badge">Web Application Security</div>
+                                <div class="cert-badge">API Penetration Testing</div>
+                                <div class="cert-badge">ISC2 Candidate</div>
+                                <div class="cert-badge">Advanced OSINT & Privacy</div>
+                                <div class="cert-badge">CLM Certified System Engineer</div>
+                                <div class="cert-badge">Certified SME Cyber Security Officer</div>
                             </div>
+                            
                             <div class="regional-quote" style="margin-top: 20px;">
                                 "Mera maksad hai ki har rural student cybersecurity mein career bana sake."
                             </div>
@@ -3547,7 +3634,7 @@
                 </div>
                 <h1 class="page-title">Abuzer Sajid</h1>
                 <p class="page-subtitle">
-                    Cybersecurity Skill Development Mentor | Rural Education Specialist | CEH Certified Professional
+                    Cybersecurity Skill Development Mentor | 35+ Cybersecurity Certifications | Rural Education Specialist
                 </p>
             </div>
             
@@ -3563,6 +3650,15 @@
                         <h3 class="founder-name" style="font-size: 3rem;">Abuzer Sajid</h3>
                         <div class="founder-title" style="font-size: 1.5rem;">Cybersecurity Skill Development Mentor</div>
                         
+                        <div style="margin: 30px 0; padding: 25px; background: linear-gradient(135deg, rgba(6, 214, 160, 0.1), rgba(37, 99, 235, 0.1)); border-radius: 15px;">
+                            <h4 style="font-family: 'Space Grotesk', monospace; color: var(--light-gray); margin-bottom: 15px;">
+                                <i class="fas fa-certificate"></i> 35+ Cybersecurity Certifications
+                            </h4>
+                            <p style="color: var(--medium-gray);">
+                                One of the most comprehensively certified cybersecurity trainers in rural Karnataka
+                            </p>
+                        </div>
+                        
                         <div class="content-section" style="margin-top: 40px;">
                             <div class="section-heading">
                                 <div class="section-icon">
@@ -3571,22 +3667,75 @@
                                 <h2 class="section-title">Professional Background</h2>
                             </div>
                             <div class="content-text">
-                                Abuzer Sajid is a cybersecurity professional with specialized training in ethical hacking and penetration testing. His journey in cybersecurity education began with identifying the unique challenges faced by rural students in accessing quality technical education.
+                                Abuzer Sajid is a cybersecurity professional with extensive training and certifications in ethical hacking, penetration testing, and security operations. His journey in cybersecurity education began with identifying the unique challenges faced by rural students in accessing quality technical education.
                             </div>
                             
                             <div class="info-grid" style="margin-top: 30px;">
                                 <div class="info-card">
-                                    <h4><i class="fas fa-certificate" style="color: var(--cyber-teal); margin-right: 10px;"></i> Certifications</h4>
-                                    <p>• Certified Ethical Hacker (CEH)<br>• Cybersecurity Fundamentals<br>• Practical Penetration Testing</p>
+                                    <h4><i class="fas fa-certificate" style="color: var(--cyber-teal); margin-right: 10px;"></i> Major Certifications</h4>
+                                    <p>• Certified Ethical Hacker (CEH)<br>• Certified Red Team Operations Management (CRTOM)<br>• Cyber Red Team Associate (CRTA)<br>• Certified Cybersecurity Educator Professional (CCEP)</p>
                                 </div>
                                 <div class="info-card">
                                     <h4><i class="fas fa-briefcase" style="color: var(--cyber-teal); margin-right: 10px;"></i> Experience</h4>
-                                    <p>• 5+ Years in Cybersecurity Training<br>• 1000+ Rural Students Trained<br>• Specialized in Beginner Education</p>
+                                    <p>• 5+ Years in Cybersecurity Training<br>• 1000+ Rural Students Trained<br>• Specialized in Beginner Education<br>• Cloud Security Expertise (AWS, Azure)</p>
                                 </div>
                                 <div class="info-card">
                                     <h4><i class="fas fa-language" style="color: var(--cyber-teal); margin-right: 10px;"></i> Language Proficiency</h4>
-                                    <p>• Fluent in Hindi<br>• Conversational Kannada<br>• Professional English</p>
+                                    <p>• Fluent in Hindi<br>• Conversational Kannada<br>• Professional English<br>• Technical Documentation in Multiple Languages</p>
                                 </div>
+                            </div>
+                        </div>
+                        
+                        <div class="content-section">
+                            <div class="section-heading">
+                                <div class="section-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <h2 class="section-title">Complete Certification Portfolio</h2>
+                            </div>
+                            <div class="content-text">
+                                Abuzer holds one of the most comprehensive cybersecurity certification portfolios among rural trainers:
+                            </div>
+                            
+                            <div class="certification-badges" style="margin: 30px 0;">
+                                <div class="cert-badge">CEH (Certified Ethical Hacker)</div>
+                                <div class="cert-badge">CRTOM (Certified Red Team Operations Management)</div>
+                                <div class="cert-badge">CRTA (Cyber Red Team Associate)</div>
+                                <div class="cert-badge">CCEP (Certified Cybersecurity Educator Professional)</div>
+                                <div class="cert-badge">Offensive Security Junior</div>
+                                <div class="cert-badge">AWS Certified Security Specialist</div>
+                                <div class="cert-badge">AWS Cloud Practitioner Essentials</div>
+                                <div class="cert-badge">Azure Security Technologies</div>
+                                <div class="cert-badge">CECB (Certified Encryption & Cryptography Beginner)</div>
+                                <div class="cert-badge">Junior Cybersecurity Analyst</div>
+                                <div class="cert-badge">LLM Security Testing</div>
+                                <div class="cert-badge">Malware Analysis</div>
+                                <div class="cert-badge">Core Networking Concepts for Ethical Hackers</div>
+                                <div class="cert-badge">AI Prompt Engineering: From Basics to Mastery</div>
+                                <div class="cert-badge">Android Malware Analysis</div>
+                                <div class="cert-badge">Certified DevOps Professional</div>
+                                <div class="cert-badge">ISO/IEC 27001:2022 Lead Auditor</div>
+                                <div class="cert-badge">Mobile App Pentesting & Bug Bounty Hunting</div>
+                                <div class="cert-badge">Multicloud Network Associate</div>
+                                <div class="cert-badge">Pentesting 101</div>
+                                <div class="cert-badge">AI Governance Certification</div>
+                                <div class="cert-badge">Oracle Certified Networking Professional</div>
+                                <div class="cert-badge">VAPT</div>
+                                <div class="cert-badge">Website Hacking & Penetration Testing</div>
+                                <div class="cert-badge">Ransomware Protection & Defense</div>
+                                <div class="cert-badge">Python & Java Programming</div>
+                                <div class="cert-badge">Cybersecurity (The Red Users)</div>
+                                <div class="cert-badge">Web Application Security / Google Hacking</div>
+                                <div class="cert-badge">API Penetration Testing</div>
+                                <div class="cert-badge">ISC2 Candidate</div>
+                                <div class="cert-badge">Advanced OSINT & Privacy</div>
+                                <div class="cert-badge">CLM Certified System Engineer</div>
+                                <div class="cert-badge">Certified SME Cyber Security Officer</div>
+                            </div>
+                            
+                            <div class="highlight-box">
+                                <h4><i class="fas fa-trophy" style="color: #FBBF24; margin-right: 10px;"></i> Certification Achievement</h4>
+                                <p>This comprehensive certification portfolio represents over 1000+ hours of dedicated learning and practical experience across all major cybersecurity domains including ethical hacking, cloud security, forensics, and security operations.</p>
                             </div>
                         </div>
                         
@@ -3602,7 +3751,7 @@
                             </div>
                             <div class="highlight-box">
                                 <h4>Core Teaching Philosophy</h4>
-                                <p>"I believe in building confidence first. Many rural students hesitate because they think cybersecurity is too complex or requires perfect English. I show them that with the right guidance, anyone can learn."</p>
+                                <p>"I believe in building confidence first. Many rural students hesitate because they think cybersecurity is too complex or requires perfect English. I show them that with the right guidance and practical approach, anyone can learn cybersecurity skills."</p>
                             </div>
                         </div>
                         
