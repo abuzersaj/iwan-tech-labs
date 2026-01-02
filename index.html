@@ -8,17 +8,17 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>IWAN Tech Labs | Cybersecurity Training & Skill Development in Karnataka</title>
+    <title>IWAN Tech Labs | Cybersecurity Training & Services in Karnataka</title>
 
     <!-- SEO Meta -->
-    <meta name="description" content="Skill-based cybersecurity training and internship programs with hands-on labs and guided mentorship in Karnataka. Practical learning with industry-aligned curriculum." />
-    <meta name="keywords" content="cybersecurity training, ethical hacking, penetration testing, digital forensics, bug bounty training, cybersecurity skill development, practical IT training Karnataka, certificate verification, Channagiri cybersecurity training, rural cybersecurity training, Hindi cybersecurity training, Kannada cybersecurity training, cybersecurity for rural students" />
+    <meta name="description" content="Cybersecurity training, assessments, consulting, and services for organizations in Karnataka. Practical learning with industry-aligned curriculum." />
+    <meta name="keywords" content="cybersecurity training, ethical hacking, penetration testing, digital forensics, bug bounty training, cybersecurity services, security assessment, compliance consulting, SOC services, incident response, phishing simulation, corporate training, Karnataka cybersecurity" />
     <meta name="author" content="IWAN Tech Labs" />
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="IWAN Tech Labs | Cybersecurity Skill Development Programs" />
-    <meta property="og:description" content="Practical cybersecurity training with hands-on labs and skill development programs in Karnataka." />
+    <meta property="og:title" content="IWAN Tech Labs | Cybersecurity Services & Training" />
+    <meta property="og:description" content="Professional cybersecurity services and practical training programs in Karnataka." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://abuzersaj.github.io/iwan-tech-labs/" />
     <meta property="og:image" content="https://abuzersaj.github.io/iwan-tech-labs/og-image.jpg" />
@@ -28,8 +28,8 @@
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="IWAN Tech Labs | Cybersecurity Training" />
-    <meta name="twitter:description" content="Practical cybersecurity skill development with hands-on labs" />
+    <meta name="twitter:title" content="IWAN Tech Labs | Cybersecurity Services" />
+    <meta name="twitter:description" content="Professional cybersecurity services and training" />
     <meta name="twitter:image" content="https://abuzersaj.github.io/iwan-tech-labs/og-image.jpg" />
 
     <!-- Canonical -->
@@ -49,11 +49,11 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
+      "@type": ["EducationalOrganization", "ProfessionalService"],
       "name": "IWAN Tech Labs",
-      "description": "Cybersecurity Skill Development Initiative",
+      "description": "Cybersecurity Skill Development & Professional Services",
       "url": "https://abuzersaj.github.io/iwan-tech-labs/",
-      "logo": "https://acbuzersaj.github.io/iwan-tech-labs/assets/logo.svg",
+      "logo": "https://abuzersaj.github.io/iwan-tech-labs/assets/logo.svg",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Hosur, Channagiri",
@@ -71,7 +71,7 @@
       "founder": {
         "@type": "Person",
         "name": "Abuzer Sajid",
-        "jobTitle": "Skill Development Mentor",
+        "jobTitle": "Cybersecurity Consultant & Trainer",
         "hasCredential": [
           "CEH (Certified Ethical Hacker)",
           "CRTOM (Certified Red Team Operations Management)",
@@ -108,6 +108,16 @@
           "Certified SME Cyber Security Officer"
         ]
       },
+      "serviceType": [
+        "Cybersecurity Training",
+        "Security Assessment",
+        "Compliance Consulting",
+        "Security Operations Support",
+        "Incident Response",
+        "Phishing Simulation",
+        "Digital Forensics",
+        "Corporate Security Training"
+      ],
       "course": [
         {
           "@type": "Course",
@@ -361,6 +371,214 @@
             color: var(--medium-gray);
             text-transform: uppercase;
             letter-spacing: 1px;
+        }
+        
+        /* NEW SERVICES SECTION STYLES */
+        
+        .services-section {
+            padding: 120px 0;
+            background: linear-gradient(135deg, var(--navy-blue), var(--dark-navy));
+            position: relative;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+            transition: all 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--cyber-teal);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service-header {
+            padding: 30px 30px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .service-number {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--electric-blue), var(--neon-purple));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', monospace;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            flex-shrink: 0;
+        }
+        
+        .service-title {
+            font-family: 'Space Grotesk', monospace;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--light-gray);
+            line-height: 1.3;
+        }
+        
+        .service-content {
+            padding: 0 30px 30px;
+            flex: 1;
+        }
+        
+        .service-description {
+            color: var(--medium-gray);
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        
+        .service-includes {
+            margin-top: 20px;
+        }
+        
+        .service-includes h4 {
+            color: var(--cyber-teal);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .service-includes ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .service-includes li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 12px;
+            color: var(--medium-gray);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .service-includes li:before {
+            content: "•";
+            color: var(--cyber-teal);
+            font-weight: bold;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .service-note {
+            background: rgba(6, 214, 160, 0.1);
+            border: 1px solid rgba(6, 214, 160, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--cyber-teal);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-warning {
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #FBBF24;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-legal-notice {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 50px;
+            text-align: center;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .service-legal-notice h3 {
+            font-family: 'Space Grotesk', monospace;
+            color: #EF4444;
+            margin-bottom: 15px;
+        }
+        
+        .service-legal-notice p {
+            color: var(--medium-gray);
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+        
+        .service-trust-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .trust-badge {
+            background: linear-gradient(135deg, rgba(6, 214, 160, 0.1), rgba(37, 99, 235, 0.1));
+            border: 1px solid rgba(6, 214, 160, 0.3);
+            padding: 12px 25px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--cyber-teal);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .services-cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .services-cta-btn {
+            background: linear-gradient(135deg, var(--electric-blue), var(--neon-purple));
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .services-cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
         }
         
         /* Programs Section */
@@ -2214,6 +2432,12 @@
                 margin: 0 auto 80px;
             }
             
+            .services-grid {
+                grid-template-columns: 1fr;
+                max-width: 600px;
+                margin: 0 auto 50px;
+            }
+            
             .contact-container {
                 grid-template-columns: 1fr;
                 gap: 60px;
@@ -2378,6 +2602,17 @@
                 font-size: 2rem;
             }
             
+            .service-header {
+                padding: 25px 25px 0;
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+            
+            .service-content {
+                padding: 0 25px 25px;
+            }
+            
             .footer-content {
                 grid-template-columns: 1fr;
             }
@@ -2425,6 +2660,11 @@
                 padding: 6px 12px;
                 font-size: 0.8rem;
             }
+            
+            .service-legal-notice {
+                padding: 20px;
+                margin-top: 30px;
+            }
         }
     </style>
 </head>
@@ -2438,6 +2678,7 @@
             </div>
             
             <nav class="nav-links">
+                <a href="#services" class="nav-link">Services</a>
                 <a href="#programs" class="nav-link">Programs</a>
                 <a href="#zero-degree" class="nav-link">No Degree Needed</a>
                 <a href="#rural-features" class="nav-link">Rural Features</a>
@@ -2459,50 +2700,291 @@
         <div class="container hero-container">
             <div class="hero-badge">
                 <i class="fas fa-shield-alt"></i>
-                <span>RURAL-FRIENDLY CYBERSECURITY TRAINING</span>
+                <span>CYBERSECURITY SERVICES & TRAINING</span>
             </div>
             
             <h1 class="hero-title">
-                Cybersecurity Skills for 
-                <span style="display: block; color: var(--cyber-teal);">Rural Karnataka Students</span>
+                Cybersecurity Services for 
+                <span style="display: block; color: var(--cyber-teal);">Organizations & Training for Individuals</span>
             </h1>
             
             <p class="hero-subtitle">
-                Learn practical cybersecurity skills regardless of your educational background, English fluency, or technical knowledge. We build careers, not just certificates.
+                Professional cybersecurity services for organizations and practical skill development for individuals. 
+                Enterprise security solutions and rural-friendly training programs.
             </p>
             
             <!-- Local Trust Badge -->
             <div class="local-trust">
                 <i class="fas fa-map-marker-alt"></i>
-                <h3>Special Focus on Channagiri Taluk & Nearby Rural Areas</h3>
-                <p>Providing accessible cybersecurity skill development to Karnataka's rural communities</p>
+                <h3>Services for Karnataka Organizations & Rural Training Focus</h3>
+                <p>Professional cybersecurity services for businesses and accessible training for rural communities</p>
                 <p style="color: var(--cyber-teal); margin-top: 15px; font-style: italic;">
-                    <i class="fas fa-language"></i> Hindi & Kannada Support Available | <i class="fas fa-user-graduate"></i> No Degree Required
+                    <i class="fas fa-briefcase"></i> Corporate Services | <i class="fas fa-user-graduate"></i> Individual Training
                 </p>
             </div>
             
             <div class="hero-stats">
                 <div class="stat-item">
-                    <div class="stat-number">1000+</div>
-                    <div class="stat-label">Rural Students Trained</div>
+                    <div class="stat-number">35+</div>
+                    <div class="stat-label">Cybersecurity Certifications</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">0</div>
-                    <div class="stat-label">Degree Requirement</div>
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Service Categories</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">100%</div>
-                    <div class="stat-label">Practical Learning</div>
+                    <div class="stat-label">Ethical & Legal</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">24/7</div>
-                    <div class="stat-label">Learning Support</div>
+                    <div class="stat-label">Support Available</div>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- PROGRAMS SECTION (ADDED) -->
+    <!-- NEW CYBERSECURITY SERVICES SECTION -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">PROFESSIONAL SERVICES</div>
+                <h2 class="section-title">Cybersecurity Services for Organizations</h2>
+                <p class="section-description">
+                    Comprehensive cybersecurity services designed for businesses, institutions, and organizations in Karnataka. 
+                    All services conducted with proper authorization, ethical guidelines, and legal compliance.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1: Security Assessment -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">1️⃣</div>
+                        <h3 class="service-title">Security Assessment Services</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">
+                            We identify security weaknesses in systems, applications, and networks through structured assessments in controlled environments.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Web Application Security Assessment</li>
+                                <li>API Security Assessment</li>
+                                <li>Network & Infrastructure Review</li>
+                                <li>Configuration & Misconfiguration Checks</li>
+                                <li>Risk Identification & Reporting</li>
+                            </ul>
+                        </div>
+                        <div class="service-note">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ethical | Controlled environments | Actionable security reports</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2: Compliance Consulting -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">2️⃣</div>
+                        <h3 class="service-title">Compliance & Security Consulting</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">
+                            We help organizations understand and improve their security posture aligned with industry best practices and compliance requirements.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Security posture review</li>
+                                <li>Policy & process guidance</li>
+                                <li>Awareness of standards (ISO 27001 concepts, data protection basics)</li>
+                                <li>Security roadmap planning</li>
+                            </ul>
+                        </div>
+                        <div class="service-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Advisory and guidance only (not a government certification authority)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3: SOC Support -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">3️⃣</div>
+                        <h3 class="service-title">Security Operations Support (SOC)</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">
+                            Basic security operations support for monitoring and improving security visibility within your organization.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Log monitoring guidance</li>
+                                <li>Alert triage support</li>
+                                <li>Incident detection fundamentals</li>
+                                <li>Security tool setup assistance (SIEM basics)</li>
+                            </ul>
+                        </div>
+                        <div class="service-note">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Educational + operational support model</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4: Incident Response -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">4️⃣</div>
+                        <h3 class="service-title">Incident Response Support</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">
+                            We assist in understanding and responding to cybersecurity incidents with proper guidance and support.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Incident analysis support</li>
+                                <li>Malware behavior understanding</li>
+                                <li>Containment & recovery guidance</li>
+                                <li>Post-incident recommendations</li>
+                            </ul>
+                        </div>
+                        <div class="service-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Support-based service, not law-enforcement replacement</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5: Phishing Simulation -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">5️⃣</div>
+                        <h3 class="service-title">Phishing Simulation & Awareness</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">
+                            We help organizations train employees to recognize and avoid phishing attacks through controlled simulations and awareness programs.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Controlled phishing simulations</li>
+                                <li>Email security awareness training</li>
+                                <li>Reporting & response training</li>
+                                <li>Human risk awareness programs</li>
+                            </ul>
+                        </div>
+                        <div class="service-note">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ethical | Permission-based | Awareness focused</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6: Corporate Training -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">6️⃣</div>
+                        <h3 class="service-title">Corporate Cybersecurity Training</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">
+                            Customized cybersecurity training for companies, institutions, and teams at beginner to intermediate levels.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Cybersecurity awareness sessions</li>
+                                <li>Secure coding basics</li>
+                                <li>Bug bounty awareness</li>
+                                <li>Defensive security fundamentals</li>
+                                <li>Beginner to intermediate level programs</li>
+                            </ul>
+                        </div>
+                        <div class="service-note">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Available online & offline</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 7: Digital Forensics -->
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-number">7️⃣</div>
+                        <h3 class="service-title">Digital Forensics Services</h3>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">
+                            Support in understanding digital evidence and cyber incidents for educational and internal review purposes.
+                        </p>
+                        <div class="service-includes">
+                            <h4>Includes:</h4>
+                            <ul>
+                                <li>Disk & memory analysis basics</li>
+                                <li>Log and artifact review</li>
+                                <li>Incident reconstruction</li>
+                                <li>Evidence handling awareness</li>
+                            </ul>
+                        </div>
+                        <div class="service-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>For educational, internal review & awareness purposes only</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Legal & Ethical Notice -->
+            <div class="service-legal-notice">
+                <h3><i class="fas fa-gavel"></i> Important Legal & Ethical Notice</h3>
+                <p>
+                    IWAN TECH LABS provides cybersecurity training, awareness, assessment, and advisory services.
+                    All activities are conducted with proper authorization, ethical guidelines, and legal compliance.
+                    We do not support illegal hacking or unauthorized access.
+                </p>
+            </div>
+            
+            <!-- Trust Boost Section -->
+            <div class="service-trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-certificate"></i>
+                    MSME Registered
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-user-shield"></i>
+                    National Career Service (NCS) Registered
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-village"></i>
+                    Rural Skill Development Focus
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-balance-scale"></i>
+                    Ethical & Legal Training
+                </div>
+            </div>
+            
+            <!-- CTA for Services -->
+            <div class="services-cta">
+                <button class="services-cta-btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-calendar-alt"></i> Schedule Service Consultation
+                </button>
+                <p style="color: var(--medium-gray); margin-top: 15px; font-size: 0.9rem;">
+                    Contact us for detailed service proposals, pricing, and scope discussions
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PROGRAMS SECTION -->
     <section id="programs" class="programs-section">
         <div class="container">
             <div class="section-header">
@@ -3244,10 +3726,10 @@
     <section id="contact" class="contact-section">
         <div class="container contact-container">
             <div class="contact-info">
-                <h2 class="contact-title">Start Your <span>Cybersecurity Journey</span></h2>
+                <h2 class="contact-title">Get in <span>Touch With Us</span></h2>
                 <p class="contact-description">
-                    Ready to build your cybersecurity skills regardless of your background? Contact us for program details, 
-                    curriculum information, or learning guidance. We speak your language.
+                    For cybersecurity services, training programs, or general inquiries, contact us. 
+                    We provide professional services for organizations and accessible training for individuals.
                 </p>
                 
                 <div class="contact-details">
@@ -3256,11 +3738,11 @@
                             <div class="detail-icon">
                                 <i class="fas fa-user-tie"></i>
                             </div>
-                            <div class="detail-title">Training Program Coordinator</div>
+                            <div class="detail-title">Cybersecurity Consultant & Trainer</div>
                         </div>
                         <div class="detail-content">
                             <p>Abuzer Sajid</p>
-                            <p>Cybersecurity Skill Development Mentor</p>
+                            <p>Cybersecurity Consultant & Skill Development Mentor</p>
                             <p style="color: var(--cyber-teal); font-weight: 600;">
                                 <i class="fas fa-certificate"></i> 35+ Cybersecurity Certifications
                             </p>
@@ -3272,7 +3754,7 @@
                             <div class="detail-icon">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
-                            <div class="detail-title">Training Inquiry</div>
+                            <div class="detail-title">Service & Training Inquiry</div>
                         </div>
                         <div class="detail-content">
                             <p><strong>Phone:</strong> +91 9611038535</p>
@@ -3290,8 +3772,8 @@
                             <div class="detail-title">Email Communications</div>
                         </div>
                         <div class="detail-content">
+                            <p><strong>Services Inquiries:</strong> iwantechlabs@gmail.com</p>
                             <p><strong>Training Inquiries:</strong> iwantechlabs@gmail.com</p>
-                            <p><strong>Parent Queries:</strong> iwantechlabs@gmail.com</p>
                             <p><strong>Support:</strong> iwantechlabs@gmail.com</p>
                         </div>
                     </div>
@@ -3299,8 +3781,8 @@
             </div>
             
             <div class="contact-form-container">
-                <h3 class="form-title">Training Program Application</h3>
-                <p class="form-subtitle">Fill this form and we'll contact you within 24 hours for program details.</p>
+                <h3 class="form-title">Service & Training Inquiry Form</h3>
+                <p class="form-subtitle">Fill this form and we'll contact you within 24 hours.</p>
                 
                 <form class="modern-form" id="contactForm">
                     <div class="form-group">
@@ -3314,37 +3796,43 @@
                     </div>
                     
                     <div class="form-group">
-                        <input type="text" id="village" class="form-input" placeholder=" ">
-                        <label for="village" class="form-label">Village/Town (Optional)</label>
+                        <input type="email" id="email" class="form-input" placeholder=" " required>
+                        <label for="email" class="form-label">Email Address *</label>
                     </div>
                     
                     <div class="form-group">
-                        <select id="program" class="form-select">
-                            <option value="">Select Training Program *</option>
-                            <option value="penetration">Penetration Testing Training</option>
-                            <option value="forensics">Digital Forensics Training</option>
-                            <option value="bug-bounty">Bug Bounty Training</option>
-                            <option value="consultation">Career Consultation</option>
+                        <select id="inquiryType" class="form-select" required>
+                            <option value="">Select Inquiry Type *</option>
+                            <option value="service">Cybersecurity Services</option>
+                            <option value="training">Training Program</option>
+                            <option value="both">Both Services & Training</option>
+                            <option value="consultation">Consultation</option>
                         </select>
                     </div>
                     
                     <div class="form-group">
-                        <select id="language" class="form-select">
-                            <option value="">Preferred Communication Language</option>
-                            <option value="hindi">Hindi</option>
-                            <option value="kannada">Kannada</option>
-                            <option value="english">English</option>
-                            <option value="any">Any Language</option>
+                        <select id="serviceType" class="form-select">
+                            <option value="">Select Service/Training (Optional)</option>
+                            <option value="security-assessment">Security Assessment</option>
+                            <option value="compliance">Compliance Consulting</option>
+                            <option value="soc">SOC Support</option>
+                            <option value="incident-response">Incident Response</option>
+                            <option value="phishing">Phishing Simulation</option>
+                            <option value="corporate-training">Corporate Training</option>
+                            <option value="forensics">Digital Forensics</option>
+                            <option value="penetration">Penetration Testing Training</option>
+                            <option value="forensics-training">Digital Forensics Training</option>
+                            <option value="bug-bounty">Bug Bounty Training</option>
                         </select>
                     </div>
                     
                     <div class="form-group">
                         <textarea id="message" class="form-textarea" placeholder=" " required></textarea>
-                        <label for="message" class="form-label">Your Background & Learning Goals *</label>
+                        <label for="message" class="form-label">Your Requirements & Timeline *</label>
                     </div>
                     
                     <button type="submit" class="submit-button">
-                        <i class="fas fa-paper-plane"></i> Submit Program Application
+                        <i class="fas fa-paper-plane"></i> Submit Inquiry
                     </button>
                 </form>
             </div>
@@ -3361,16 +3849,18 @@
                         <div class="footer-brand">IWAN TECH LABS</div>
                     </div>
                     <p class="footer-description">
-                        Rural-friendly cybersecurity skill development initiative delivering practical training through hands-on labs and expert-led programs.
+                        Professional cybersecurity services and rural-friendly training programs. 
+                        Enterprise security solutions and individual skill development initiatives.
                     </p>
                     <p style="color: var(--cyber-teal); font-size: 0.9rem; margin-top: 15px;">
-                        <i class="fas fa-map-marker-alt"></i> Serving Rural Karnataka Since 2024
+                        <i class="fas fa-map-marker-alt"></i> Serving Karnataka Organizations & Rural Communities
                     </p>
                 </div>
                 
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
+                        <li><a href="#services">Cybersecurity Services</a></li>
                         <li><a href="#programs">Training Programs</a></li>
                         <li><a href="#zero-degree">No Degree Required</a></li>
                         <li><a href="#rural-features">Rural Features</a></li>
@@ -3381,17 +3871,20 @@
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Training Programs</h3>
+                    <h3>Cybersecurity Services</h3>
                     <ul class="footer-links">
-                        <li><a href="#programs">Penetration Testing Training</a></li>
-                        <li><a href="#programs">Digital Forensics Training</a></li>
-                        <li><a href="#programs">Bug Bounty Training</a></li>
-                        <li><a href="#verification">Certificate Verification</a></li>
+                        <li><a href="#services">Security Assessment</a></li>
+                        <li><a href="#services">Compliance Consulting</a></li>
+                        <li><a href="#services">SOC Support</a></li>
+                        <li><a href="#services">Incident Response</a></li>
+                        <li><a href="#services">Phishing Simulation</a></li>
+                        <li><a href="#services">Corporate Training</a></li>
+                        <li><a href="#services">Digital Forensics</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Training Center</h3>
+                    <h3>Training & Contact</h3>
                     <ul class="footer-links">
                         <li><i class="fas fa-phone" style="margin-right: 10px; color: var(--cyber-teal);"></i> +91 9611038535</li>
                         <li><i class="fab fa-whatsapp" style="margin-right: 10px; color: var(--cyber-teal);"></i> +91 9611038535 (WhatsApp)</li>
@@ -3402,22 +3895,24 @@
             </div>
             
             <div class="copyright">
-                <p>© 2024 IWAN Tech Labs. All Rights Reserved. | Cybersecurity Skill Development Initiative</p>
-                <p class="founder-note">Training Programs by Abuzer Sajid (35+ Cybersecurity Certifications) | Rural Karnataka Focus | Practical Skill Development</p>
+                <p>© 2024 IWAN Tech Labs. All Rights Reserved. | Cybersecurity Services & Training Initiative</p>
+                <p class="founder-note">Services & Training by Abuzer Sajid (35+ Cybersecurity Certifications) | Karnataka Focus | Ethical & Legal Practices</p>
                 
                 <!-- FINAL SAFE DISCLAIMER -->
                 <div style="margin-top: 20px; font-size: 0.85rem; color: var(--medium-gray); line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto;">
                     <strong>Disclaimer:</strong><br>
-                    IWAN TECH LABS is a private skill development initiative. Programs focus on practical learning and ethical cybersecurity education. 
-                    No employment or income guarantees are provided. Certificates of completion are issued by IWAN TECH LABS upon successful completion of program requirements. 
-                    Language support is provided to help students understand concepts better. Technical tools and documentation are primarily in English.
+                    IWAN TECH LABS provides professional cybersecurity services and training programs. 
+                    Services are conducted with proper authorization, ethical guidelines, and legal compliance. 
+                    Training focuses on practical learning and ethical cybersecurity education. 
+                    No employment or income guarantees are provided. 
+                    Certificates of completion are issued by IWAN TECH LABS upon successful completion of program requirements.
                 </div>
             </div>
         </div>
     </footer>
     
     <!-- WhatsApp Button -->
-    <a href="https://wa.me/919611038535?text=Hello%20IWAN%20Tech%20Labs!%20I'm%20a%20rural%20student%20interested%20in%20cybersecurity%20training." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <a href="https://wa.me/919611038535?text=Hello%20IWAN%20Tech%20Labs!%20I'm%20interested%20in%20cybersecurity%20services%20or%20training%20programs." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -3426,1461 +3921,7 @@
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- NEW PAGES START HERE -->
-    
-    <!-- About Page -->
-    <div id="about-page" class="page-container" style="display: none;">
-        <div class="container">
-            <div class="page-header">
-                <div class="page-badge">
-                    <i class="fas fa-info-circle"></i> About IWAN TECH LABS
-                </div>
-                <h1 class="page-title">Our Mission for Rural Karnataka</h1>
-                <p class="page-subtitle">
-                    Empowering rural students with practical cybersecurity skills, regardless of their educational background or English proficiency.
-                </p>
-            </div>
-            
-            <div class="content-card">
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h2 class="section-title">Who We Are</h2>
-                    </div>
-                    <div class="content-text">
-                        IWAN TECH LABS is a rural-focused cybersecurity skill development initiative based in Channagiri, Karnataka. We specialize in making complex cybersecurity concepts accessible to students from rural backgrounds.
-                    </div>
-                    <div class="highlight-box">
-                        <h4>Our Core Philosophy</h4>
-                        <p>"Skills over degrees, practical over theoretical, and confidence over certificates. We believe every rural student has the potential to become a cybersecurity professional."</p>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-history"></i>
-                        </div>
-                        <h2 class="section-title">Why IWAN TECH LABS Started</h2>
-                    </div>
-                    <div class="content-text">
-                        We noticed three major gaps in rural cybersecurity education:
-                    </div>
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <h4><i class="fas fa-language" style="color: var(--cyber-teal); margin-right: 10px;"></i> Language Barrier</h4>
-                            <p>Most cybersecurity resources are in English, creating hurdles for Hindi/Kannada medium students.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4><i class="fas fa-graduation-cap" style="color: var(--cyber-teal); margin-right: 10px;"></i> Degree Myth</h4>
-                            <p>Rural students believe they need computer science degrees to enter cybersecurity.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4><i class="fas fa-map-marker-alt" style="color: var(--cyber-teal); margin-right: 10px;"></i> Geographical Barrier</h4>
-                            <p>Quality cybersecurity training was only available in metro cities.</p>
-                        </div>
-                    </div>
-                    <div class="content-text" style="margin-top: 30px;">
-                        IWAN TECH LABS was founded to bridge these gaps and make cybersecurity career paths accessible to every rural student in Karnataka.
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h2 class="section-title">Focus on Channagiri & Rural Karnataka</h2>
-                    </div>
-                    <div class="content-text">
-                        Our primary service area includes:
-                    </div>
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <h4>Channagiri Taluk</h4>
-                            <p>Headquartered in Hosur, serving all villages in Channagiri taluk with offline support.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Davanagere District</h4>
-                            <p>Extended reach to nearby taluks with hybrid learning models.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Rural Karnataka</h4>
-                            <p>Online support for students from any rural area in Karnataka.</p>
-                        </div>
-                    </div>
-                    <div class="regional-quote" style="margin-top: 30px;">
-                        "Gaon ke students ko bhi cybersecurity expert banne ka mauka milna chahiye."
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <h2 class="section-title">Ethical Cybersecurity Only</h2>
-                    </div>
-                    <div class="content-text">
-                        We are committed to 100% ethical cybersecurity education:
-                    </div>
-                    <div class="ethics-list">
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Controlled Learning Environment</h4>
-                                <p>All training happens in isolated lab setups. No real-world systems are touched.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Legal Compliance</h4>
-                                <p>We follow all cybersecurity education laws and regulations of India.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Zero Tolerance Policy</h4>
-                                <p>Any suggestion of illegal activities results in immediate termination from programs.</p>
-                            </div>
-                        </li>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <h2 class="section-title">Founder Introduction</h2>
-                    </div>
-                    <div class="founder-profile">
-                        <div class="founder-photo">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
-                        <div class="founder-info">
-                            <div class="founder-badge">
-                                <i class="fas fa-shield-alt"></i> Founder & Mentor
-                            </div>
-                            <h3 class="founder-name">Abuzer Sajid</h3>
-                            <div class="founder-title">Cybersecurity Skill Development Mentor</div>
-                            <p class="content-text">
-                                With certifications including CEH (Certified Ethical Hacker), Abuzer focuses on making cybersecurity accessible to rural students. His teaching methodology emphasizes practical learning and confidence building.
-                            </p>
-                            
-                            <!-- Updated Certification Badges -->
-                            <div class="certification-badges">
-                                <div class="cert-badge">CEH (Certified Ethical Hacker)</div>
-                                <div class="cert-badge">CRTOM</div>
-                                <div class="cert-badge">CRTA</div>
-                                <div class="cert-badge">CCEP</div>
-                                <div class="cert-badge">Offensive Security Junior</div>
-                                <div class="cert-badge">AWS Security Specialist</div>
-                                <div class="cert-badge">AWS Cloud Practitioner</div>
-                                <div class="cert-badge">Azure Security</div>
-                                <div class="cert-badge">CECB</div>
-                                <div class="cert-badge">Junior Cybersecurity Analyst</div>
-                                <div class="cert-badge">LLM Security Testing</div>
-                                <div class="cert-badge">Malware Analysis</div>
-                                <div class="cert-badge">Core Networking Concepts</div>
-                                <div class="cert-badge">AI Prompt Engineering</div>
-                                <div class="cert-badge">Android Malware Analysis</div>
-                                <div class="cert-badge">Certified DevOps Professional</div>
-                                <div class="cert-badge">ISO/IEC 27001:2022 Lead Auditor</div>
-                                <div class="cert-badge">Mobile App Pentesting</div>
-                                <div class="cert-badge">Multicloud Network Associate</div>
-                                <div class="cert-badge">Pentesting 101</div>
-                                <div class="cert-badge">AI Governance</div>
-                                <div class="cert-badge">Oracle Certified Networking</div>
-                                <div class="cert-badge">VAPT</div>
-                                <div class="cert-badge">Website Hacking & Penetration Testing</div>
-                                <div class="cert-badge">Ransomware Protection & Defense</div>
-                                <div class="cert-badge">Python & Java Programming</div>
-                                <div class="cert-badge">Cybersecurity (The Red Users)</div>
-                                <div class="cert-badge">Web Application Security</div>
-                                <div class="cert-badge">API Penetration Testing</div>
-                                <div class="cert-badge">ISC2 Candidate</div>
-                                <div class="cert-badge">Advanced OSINT & Privacy</div>
-                                <div class="cert-badge">CLM Certified System Engineer</div>
-                                <div class="cert-badge">Certified SME Cyber Security Officer</div>
-                            </div>
-                            
-                            <div class="regional-quote" style="margin-top: 20px;">
-                                "Mera maksad hai ki har rural student cybersecurity mein career bana sake."
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <button class="cta-button" onclick="showPage('home')">
-                    <i class="fas fa-home"></i> Back to Home
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Founder Profile Page -->
-    <div id="founder-page" class="page-container" style="display: none;">
-        <div class="container">
-            <div class="page-header">
-                <div class="page-badge">
-                    <i class="fas fa-user-tie"></i> Meet the Founder
-                </div>
-                <h1 class="page-title">Abuzer Sajid</h1>
-                <p class="page-subtitle">
-                    Cybersecurity Skill Development Mentor | 35+ Cybersecurity Certifications | Rural Education Specialist
-                </p>
-            </div>
-            
-            <div class="content-card">
-                <div class="founder-profile" style="flex-direction: column; align-items: center; text-align: center;">
-                    <div class="founder-photo" style="width: 250px; height: 250px; margin-bottom: 40px;">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="founder-info" style="max-width: 800px;">
-                        <div class="founder-badge">
-                            <i class="fas fa-shield-alt"></i> Founder & Lead Mentor
-                        </div>
-                        <h3 class="founder-name" style="font-size: 3rem;">Abuzer Sajid</h3>
-                        <div class="founder-title" style="font-size: 1.5rem;">Cybersecurity Skill Development Mentor</div>
-                        
-                        <div style="margin: 30px 0; padding: 25px; background: linear-gradient(135deg, rgba(6, 214, 160, 0.1), rgba(37, 99, 235, 0.1)); border-radius: 15px;">
-                            <h4 style="font-family: 'Space Grotesk', monospace; color: var(--light-gray); margin-bottom: 15px;">
-                                <i class="fas fa-certificate"></i> 35+ Cybersecurity Certifications
-                            </h4>
-                            <p style="color: var(--medium-gray);">
-                                One of the most comprehensively certified cybersecurity trainers in rural Karnataka
-                            </p>
-                        </div>
-                        
-                        <div class="content-section" style="margin-top: 40px;">
-                            <div class="section-heading">
-                                <div class="section-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <h2 class="section-title">Professional Background</h2>
-                            </div>
-                            <div class="content-text">
-                                Abuzer Sajid is a cybersecurity professional with extensive training and certifications in ethical hacking, penetration testing, and security operations. His journey in cybersecurity education began with identifying the unique challenges faced by rural students in accessing quality technical education.
-                            </div>
-                            
-                            <div class="info-grid" style="margin-top: 30px;">
-                                <div class="info-card">
-                                    <h4><i class="fas fa-certificate" style="color: var(--cyber-teal); margin-right: 10px;"></i> Major Certifications</h4>
-                                    <p>• Certified Ethical Hacker (CEH)<br>• Certified Red Team Operations Management (CRTOM)<br>• Cyber Red Team Associate (CRTA)<br>• Certified Cybersecurity Educator Professional (CCEP)</p>
-                                </div>
-                                <div class="info-card">
-                                    <h4><i class="fas fa-briefcase" style="color: var(--cyber-teal); margin-right: 10px;"></i> Experience</h4>
-                                    <p>• 5+ Years in Cybersecurity Training<br>• 1000+ Rural Students Trained<br>• Specialized in Beginner Education<br>• Cloud Security Expertise (AWS, Azure)</p>
-                                </div>
-                                <div class="info-card">
-                                    <h4><i class="fas fa-language" style="color: var(--cyber-teal); margin-right: 10px;"></i> Language Proficiency</h4>
-                                    <p>• Fluent in Hindi<br>• Conversational Kannada<br>• Professional English<br>• Technical Documentation in Multiple Languages</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="content-section">
-                            <div class="section-heading">
-                                <div class="section-icon">
-                                    <i class="fas fa-certificate"></i>
-                                </div>
-                                <h2 class="section-title">Complete Certification Portfolio</h2>
-                            </div>
-                            <div class="content-text">
-                                Abuzer holds one of the most comprehensive cybersecurity certification portfolios among rural trainers:
-                            </div>
-                            
-                            <div class="certification-badges" style="margin: 30px 0;">
-                                <div class="cert-badge">CEH (Certified Ethical Hacker)</div>
-                                <div class="cert-badge">CRTOM (Certified Red Team Operations Management)</div>
-                                <div class="cert-badge">CRTA (Cyber Red Team Associate)</div>
-                                <div class="cert-badge">CCEP (Certified Cybersecurity Educator Professional)</div>
-                                <div class="cert-badge">Offensive Security Junior</div>
-                                <div class="cert-badge">AWS Certified Security Specialist</div>
-                                <div class="cert-badge">AWS Cloud Practitioner Essentials</div>
-                                <div class="cert-badge">Azure Security Technologies</div>
-                                <div class="cert-badge">CECB (Certified Encryption & Cryptography Beginner)</div>
-                                <div class="cert-badge">Junior Cybersecurity Analyst</div>
-                                <div class="cert-badge">LLM Security Testing</div>
-                                <div class="cert-badge">Malware Analysis</div>
-                                <div class="cert-badge">Core Networking Concepts for Ethical Hackers</div>
-                                <div class="cert-badge">AI Prompt Engineering: From Basics to Mastery</div>
-                                <div class="cert-badge">Android Malware Analysis</div>
-                                <div class="cert-badge">Certified DevOps Professional</div>
-                                <div class="cert-badge">ISO/IEC 27001:2022 Lead Auditor</div>
-                                <div class="cert-badge">Mobile App Pentesting & Bug Bounty Hunting</div>
-                                <div class="cert-badge">Multicloud Network Associate</div>
-                                <div class="cert-badge">Pentesting 101</div>
-                                <div class="cert-badge">AI Governance Certification</div>
-                                <div class="cert-badge">Oracle Certified Networking Professional</div>
-                                <div class="cert-badge">VAPT</div>
-                                <div class="cert-badge">Website Hacking & Penetration Testing</div>
-                                <div class="cert-badge">Ransomware Protection & Defense</div>
-                                <div class="cert-badge">Python & Java Programming</div>
-                                <div class="cert-badge">Cybersecurity (The Red Users)</div>
-                                <div class="cert-badge">Web Application Security / Google Hacking</div>
-                                <div class="cert-badge">API Penetration Testing</div>
-                                <div class="cert-badge">ISC2 Candidate</div>
-                                <div class="cert-badge">Advanced OSINT & Privacy</div>
-                                <div class="cert-badge">CLM Certified System Engineer</div>
-                                <div class="cert-badge">Certified SME Cyber Security Officer</div>
-                            </div>
-                            
-                            <div class="highlight-box">
-                                <h4><i class="fas fa-trophy" style="color: #FBBF24; margin-right: 10px;"></i> Certification Achievement</h4>
-                                <p>This comprehensive certification portfolio represents over 1000+ hours of dedicated learning and practical experience across all major cybersecurity domains including ethical hacking, cloud security, forensics, and security operations.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="content-section">
-                            <div class="section-heading">
-                                <div class="section-icon">
-                                    <i class="fas fa-eye"></i>
-                                </div>
-                                <h2 class="section-title">Vision for Rural Students</h2>
-                            </div>
-                            <div class="content-text">
-                                Abuzer's vision is clear: "Every rural student deserves access to quality cybersecurity education, regardless of their educational background or language proficiency."
-                            </div>
-                            <div class="highlight-box">
-                                <h4>Core Teaching Philosophy</h4>
-                                <p>"I believe in building confidence first. Many rural students hesitate because they think cybersecurity is too complex or requires perfect English. I show them that with the right guidance and practical approach, anyone can learn cybersecurity skills."</p>
-                            </div>
-                        </div>
-                        
-                        <div class="content-section">
-                            <div class="section-heading">
-                                <div class="section-icon">
-                                    <i class="fas fa-hands-helping"></i>
-                                </div>
-                                <h2 class="section-title">Teaching Methodology</h2>
-                            </div>
-                            <div class="content-text">
-                                Abuzer's teaching approach is specifically designed for rural learners:
-                            </div>
-                            <div class="info-grid">
-                                <div class="info-card">
-                                    <h4>Step-by-Step Learning</h4>
-                                    <p>Breaking complex topics into simple, digestible steps that anyone can follow.</p>
-                                </div>
-                                <div class="info-card">
-                                    <h4>Language Flexibility</h4>
-                                    <p>Explaining concepts in Hindi/Kannada, then transitioning to technical English terms.</p>
-                                </div>
-                                <div class="info-card">
-                                    <h4>Practical First</h4>
-                                    <p>Hands-on labs from day one to build confidence and practical understanding.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="regional-quote" style="margin: 40px 0; font-size: 1.3rem;">
-                            "Meri coaching ka maksad sirf certificate dena nahi hai, balki confidence dena hai. Certificate toh akhir mein mil hi jaata hai, par confidence chahiye seekhne ke liye."
-                        </div>
-                        
-                        <div class="content-section">
-                            <div class="section-heading">
-                                <div class="section-icon">
-                                    <i class="fas fa-comments"></i>
-                                </div>
-                                <h2 class="section-title">Direct Contact</h2>
-                            </div>
-                            <div class="content-text">
-                                Abuzer is directly involved in student mentoring and is available for:
-                            </div>
-                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
-                                <div style="text-align: center; padding: 25px; background: rgba(255, 255, 255, 0.03); border-radius: 15px;">
-                                    <i class="fas fa-user-graduate" style="font-size: 40px; color: var(--cyber-teal); margin-bottom: 15px;"></i>
-                                    <h4>Student Guidance</h4>
-                                    <p>Direct mentoring for all enrolled students</p>
-                                </div>
-                                <div style="text-align: center; padding: 25px; background: rgba(255, 255, 255, 0.03); border-radius: 15px;">
-                                    <i class="fas fa-users" style="font-size: 40px; color: var(--cyber-teal); margin-bottom: 15px;"></i>
-                                    <h4>Parent Counseling</h4>
-                                    <p>Explaining cybersecurity careers to parents</p>
-                                </div>
-                                <div style="text-align: center; padding: 25px; background: rgba(255, 255, 255, 0.03); border-radius: 15px;">
-                                    <i class="fas fa-phone-alt" style="font-size: 40px; color: var(--cyber-teal); margin-bottom: 15px;"></i>
-                                    <h4>Direct Support</h4>
-                                    <p>Available via WhatsApp for urgent queries</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <button class="cta-button" onclick="showPage('home')">
-                    <i class="fas fa-home"></i> Back to Home
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Training Methodology Page -->
-    <div id="methodology-page" class="page-container" style="display: none;">
-        <div class="container">
-            <div class="page-header">
-                <div class="page-badge">
-                    <i class="fas fa-chalkboard-teacher"></i> Our Training Methodology
-                </div>
-                <h1 class="page-title">How We Teach Cybersecurity</h1>
-                <p class="page-subtitle">
-                    A structured approach designed specifically for rural students with no technical background.
-                </p>
-            </div>
-            
-            <div class="content-card">
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-user-graduate"></i>
-                        </div>
-                        <h2 class="section-title">Teaching Beginners from Zero</h2>
-                    </div>
-                    <div class="content-text">
-                        We understand that most rural students start with zero knowledge of cybersecurity. Our approach:
-                    </div>
-                    
-                    <div class="verification-steps">
-                        <div class="verification-step">
-                            <h4>1. Foundation Building</h4>
-                            <p>Starting with basic computer concepts, internet fundamentals, and essential networking knowledge. No prior knowledge assumed.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>2. Concept Visualization</h4>
-                            <p>Using real-world analogies and simple examples to explain complex cybersecurity concepts.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>3. Gradual Progression</h4>
-                            <p>Moving from simple to complex topics only when students have mastered the basics.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>4. Continuous Assessment</h4>
-                            <p>Regular checkpoints to ensure understanding before moving forward.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-language"></i>
-                        </div>
-                        <h2 class="section-title">Language Support Method</h2>
-                    </div>
-                    <div class="content-text">
-                        Our unique multilingual approach:
-                    </div>
-                    
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <h4>Hindi/Kannada Explanation</h4>
-                            <p>Concepts first explained in the student's comfortable language using simple terms.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Technical Terms in English</h4>
-                            <p>Gradual introduction of English technical terms with proper context.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Bilingual Documentation</h4>
-                            <p>Notes and guides available with Hindi/Kannada explanations alongside English terms.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="regional-quote" style="margin-top: 30px;">
-                        "Pehle Hindi/Kannada mein samjhayenge, fir English technical terms sikhaayenge."
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h2 class="section-title">Practical Labs Approach</h2>
-                    </div>
-                    <div class="content-text">
-                        Learning by doing is at the core of our methodology:
-                    </div>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
-                        <div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 15px; border-left: 4px solid var(--cyber-teal);">
-                            <h4 style="color: var(--light-gray); margin-bottom: 15px;">Controlled Lab Environment</h4>
-                            <p style="color: var(--medium-gray);">All practical exercises happen in isolated virtual labs. No risk to real systems.</p>
-                        </div>
-                        <div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 15px; border-left: 4px solid var(--cyber-teal);">
-                            <h4 style="color: var(--light-gray); margin-bottom: 15px;">Step-by-Step Guides</h4>
-                            <p style="color: var(--medium-gray);">Detailed instructions with screenshots for every lab exercise.</p>
-                        </div>
-                        <div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 15px; border-left: 4px solid var(--cyber-teal);">
-                            <h4 style="color: var(--light-gray); margin-bottom: 15px;">Real-World Scenarios</h4>
-                            <p style="color: var(--medium-gray);">Practical exercises based on real cybersecurity challenges.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-balance-scale"></i>
-                        </div>
-                        <h2 class="section-title">Ethical & Legal Boundaries</h2>
-                    </div>
-                    <div class="content-text">
-                        We maintain strict ethical standards:
-                    </div>
-                    
-                    <div class="ethics-list">
-                        <li>
-                            <i class="fas fa-shield-alt"></i>
-                            <div>
-                                <h4>Isolated Learning</h4>
-                                <p>All practical work done in controlled virtual environments. No access to real systems.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-gavel"></i>
-                            <div>
-                                <h4>Legal Compliance</h4>
-                                <p>Training follows all Indian cybersecurity laws and regulations.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-ban"></i>
-                            <div>
-                                <h4>Zero Tolerance</h4>
-                                <p>Immediate action against any unauthorized or illegal activity suggestions.</p>
-                            </div>
-                        </li>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-clipboard-check"></i>
-                        </div>
-                        <h2 class="section-title">Evaluation & Certificate Process</h2>
-                    </div>
-                    <div class="content-text">
-                        Our assessment system focuses on practical skills:
-                    </div>
-                    
-                    <div class="verification-steps">
-                        <div class="verification-step">
-                            <h4>1. Practical Assessments</h4>
-                            <p>Students demonstrate skills through hands-on lab exercises rather than written tests.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>2. Project-Based Evaluation</h4>
-                            <p>Completion of practical projects that simulate real cybersecurity tasks.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>3. Certificate Issuance</h4>
-                            <p>Certificates awarded only after successful completion of all practical requirements.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>4. Verification System</h4>
-                            <p>All certificates include unique IDs for online verification on our website.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <button class="cta-button" onclick="showPage('home')">
-                    <i class="fas fa-home"></i> Back to Home
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Certificate Sample Page -->
-    <div id="certificate-page" class="page-container" style="display: none;">
-        <div class="container">
-            <div class="page-header">
-                <div class="page-badge">
-                    <i class="fas fa-certificate"></i> Certificate Sample & Verification
-                </div>
-                <h1 class="page-title">Verifiable Certificates</h1>
-                <p class="page-subtitle">
-                    All IWAN TECH LABS certificates include unique IDs and multiple verification methods.
-                </p>
-            </div>
-            
-            <div class="content-card">
-                <div class="certificate-sample">
-                    <h3 style="font-family: 'Space Grotesk', monospace; margin-bottom: 30px; color: var(--light-gray);">Certificate of Completion Sample</h3>
-                    
-                    <div class="certificate-placeholder">
-                        <div class="certificate-icon">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div class="certificate-text">Certificate of Completion</div>
-                        <div class="certificate-text" style="font-size: 1.2rem; margin-bottom: 20px;">IWAN TECH LABS</div>
-                        <div class="certificate-id">ITL-CERT-2024-00123</div>
-                    </div>
-                    
-                    <p style="color: var(--medium-gray); margin-top: 20px;">
-                        <i class="fas fa-info-circle" style="color: var(--cyber-teal);"></i>
-                        This is a representation. Actual certificates include student details, program name, and issue date.
-                    </p>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <h2 class="section-title">How to Verify Certificate</h2>
-                    </div>
-                    <div class="content-text">
-                        Follow these simple steps to verify any IWAN TECH LABS certificate:
-                    </div>
-                    
-                    <div class="verification-steps">
-                        <div class="verification-step">
-                            <h4>1. Locate Certificate ID</h4>
-                            <p>Find the unique certificate ID on the bottom of your certificate. Format: ITL-CERT-YYYY-XXXXX</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>2. Visit Verification Page</h4>
-                            <p>Go to our website's certificate verification section or scan the QR code on the certificate.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>3. Enter Certificate ID</h4>
-                            <p>Type your certificate ID in the verification field and click "Verify Certificate".</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>4. View Verification Results</h4>
-                            <p>The system will display certificate details including student name, program, and validity status.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-qrcode"></i>
-                        </div>
-                        <h2 class="section-title">Certificate ID Location</h2>
-                    </div>
-                    <div class="content-text">
-                        Every IWAN TECH LABS certificate includes these verification elements:
-                    </div>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 30px;">
-                        <div style="text-align: center; padding: 25px; background: rgba(255, 255, 255, 0.03); border-radius: 15px;">
-                            <i class="fas fa-id-card" style="font-size: 40px; color: var(--cyber-teal); margin-bottom: 15px;"></i>
-                            <h4>Unique Certificate ID</h4>
-                            <p style="color: var(--medium-gray); font-family: monospace; margin-top: 10px;">ITL-CERT-2024-00123</p>
-                            <p style="color: var(--medium-gray); font-size: 0.9rem; margin-top: 10px;">Located at certificate bottom</p>
-                        </div>
-                        <div style="text-align: center; padding: 25px; background: rgba(255, 255, 255, 0.03); border-radius: 15px;">
-                            <i class="fas fa-qrcode" style="font-size: 40px; color: var(--cyber-teal); margin-bottom: 15px;"></i>
-                            <h4>QR Code</h4>
-                            <p style="color: var(--medium-gray); margin-top: 10px;">Scan to go directly to verification page</p>
-                            <p style="color: var(--medium-gray); font-size: 0.9rem; margin-top: 10px;">Located on certificate corner</p>
-                        </div>
-                        <div style="text-align: center; padding: 25px; background: rgba(255, 255, 255, 0.03); border-radius: 15px;">
-                            <i class="fas fa-shield-alt" style="font-size: 40px; color: var(--cyber-teal); margin-bottom: 15px;"></i>
-                            <h4>Security Features</h4>
-                            <p style="color: var(--medium-gray); margin-top: 10px;">Watermark and unique design to prevent forgery</p>
-                            <p style="color: var(--medium-gray); font-size: 0.9rem; margin-top: 10px;">Visible under light</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-exclamation-triangle"></i>
-                        </div>
-                        <h2 class="section-title">Important Notes</h2>
-                    </div>
-                    
-                    <div class="highlight-box" style="background: rgba(251, 191, 36, 0.1); border-left-color: #FBBF24;">
-                        <h4><i class="fas fa-lightbulb" style="color: #FBBF24; margin-right: 10px;"></i> Certificate Validity</h4>
-                        <p>IWAN TECH LABS certificates are valid for 2 years from issue date. After this period, students can verify certificate status through our manual verification system.</p>
-                    </div>
-                    
-                    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.1); border-left-color: #EF4444; margin-top: 20px;">
-                        <h4><i class="fas fa-ban" style="color: #EF4444; margin-right: 10px;"></i> Fake Certificate Warning</h4>
-                        <p>Beware of fake certificates. Always verify through our official website. IWAN TECH LABS is not responsible for certificates not verified through our system.</p>
-                    </div>
-                    
-                    <div class="highlight-box" style="background: rgba(6, 214, 160, 0.1); margin-top: 20px;">
-                        <h4><i class="fas fa-question-circle" style="color: var(--cyber-teal); margin-right: 10px;"></i> Need Help with Verification?</h4>
-                        <p>Contact us at +91 9611038535 (WhatsApp) or iwantechlabs@gmail.com for assistance with certificate verification.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <button class="cta-button" onclick="document.getElementById('verification').scrollIntoView({behavior: 'smooth'}); showPage('home')">
-                    <i class="fas fa-search"></i> Verify Certificate Now
-                </button>
-                <button class="cta-button" onclick="showPage('home')" style="margin-left: 20px; background: var(--dark-gray);">
-                    <i class="fas fa-home"></i> Back to Home
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Parent Information Page -->
-    <div id="parents-page" class="page-container" style="display: none;">
-        <div class="container">
-            <div class="page-header">
-                <div class="page-badge">
-                    <i class="fas fa-users"></i> Information for Parents
-                </div>
-                <h1 class="page-title">Guidance for Parents</h1>
-                <p class="page-subtitle">
-                    Simple explanations about cybersecurity training for rural students. We speak your language.
-                </p>
-            </div>
-            
-            <div class="content-card">
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h2 class="section-title">What is Cybersecurity?</h2>
-                    </div>
-                    <div class="content-text">
-                        <strong>Simple Explanation:</strong> Cybersecurity is like learning how to protect computers, phones, and online systems from hackers and cyber threats.
-                    </div>
-                    
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <h4>Like Learning Driving</h4>
-                            <p>Just as driving schools teach safe driving, we teach safe and ethical computer skills.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Digital Protection</h4>
-                            <p>Students learn to protect online systems, not attack them.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Growing Career Field</h4>
-                            <p>Every company needs cybersecurity experts to protect their digital systems.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="regional-quote" style="margin-top: 30px;">
-                        "Cybersecurity computer systems ki safety ka kaam hai. Jaise hum apne ghar ko lock karte hain, waise hi computer systems ko safe rakhte hain."
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <h2 class="section-title">Is it Safe & Legal?</h2>
-                    </div>
-                    <div class="content-text">
-                        Yes, absolutely. Our training is 100% safe and legal:
-                    </div>
-                    
-                    <div class="ethics-list">
-                        <li>
-                            <i class="fas fa-user-shield"></i>
-                            <div>
-                                <h4>Controlled Learning</h4>
-                                <p>All practice happens in isolated computer labs. No real systems are touched.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-gavel"></i>
-                            <div>
-                                <h4>Legal Compliance</h4>
-                                <p>We follow all Indian laws regarding cybersecurity education.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-ban"></i>
-                            <div>
-                                <h4>Zero Illegal Activities</h4>
-                                <p>We do not teach or allow any illegal hacking activities.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-chalkboard-teacher"></i>
-                            <div>
-                                <h4>Ethical Focus</h4>
-                                <p>We teach defensive skills - how to protect, not how to attack.</p>
-                            </div>
-                        </li>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-school"></i>
-                        </div>
-                        <h2 class="section-title">Learning Environment</h2>
-                    </div>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
-                        <div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 15px;">
-                            <h4 style="color: var(--light-gray); margin-bottom: 15px;"><i class="fas fa-language" style="color: var(--cyber-teal); margin-right: 10px;"></i> Language Support</h4>
-                            <p style="color: var(--medium-gray);">Concepts explained in Hindi/Kannada. No English pressure on students.</p>
-                        </div>
-                        <div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 15px;">
-                            <h4 style="color: var(--light-gray); margin-bottom: 15px;"><i class="fas fa-user-friends" style="color: var(--cyber-teal); margin-right: 10px;"></i> Small Batches</h4>
-                            <p style="color: var(--medium-gray);">Limited students per batch for individual attention.</p>
-                        </div>
-                        <div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 15px;">
-                            <h4 style="color: var(--light-gray); margin-bottom: 15px;"><i class="fas fa-headset" style="color: var(--cyber-teal); margin-right: 10px;"></i> 24/7 Support</h4>
-                            <p style="color: var(--medium-gray);">WhatsApp support for doubts anytime.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h2 class="section-title">Career Scope (No Guarantee Claims)</h2>
-                    </div>
-                    <div class="content-text">
-                        We provide skill development, not job guarantees. However, cybersecurity has good career potential:
-                    </div>
-                    
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <h4>Growing Industry</h4>
-                            <p>Cybersecurity jobs are increasing every year in India and globally.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Remote Work Options</h4>
-                            <p>Many cybersecurity jobs can be done from home or rural locations.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Multiple Career Paths</h4>
-                            <p>Students can work in companies, government, or as freelancers.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="highlight-box" style="background: rgba(251, 191, 36, 0.1); border-left-color: #FBBF24; margin-top: 30px;">
-                        <h4><i class="fas fa-exclamation-triangle" style="color: #FBBF24; margin-right: 10px;"></i> Important Disclaimer</h4>
-                        <p>We provide skill training and career guidance. Success depends on student effort and market conditions. We do not guarantee jobs or specific income levels.</p>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h2 class="section-title">Contact Process for Parents</h2>
-                    </div>
-                    <div class="content-text">
-                        We welcome parents to discuss their children's education:
-                    </div>
-                    
-                    <div class="verification-steps">
-                        <div class="verification-step">
-                            <h4>1. Initial Discussion</h4>
-                            <p>Parents can call or WhatsApp to understand the program in simple language.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>2. Meeting Options</h4>
-                            <p>Local parents can visit our center. Others can have video calls.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>3. Progress Updates</h4>
-                            <p>Regular updates about student progress available on request.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>4. Continuous Support</h4>
-                            <p>Parents can contact us anytime with questions or concerns.</p>
-                        </div>
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 40px; padding: 30px; background: linear-gradient(135deg, rgba(6, 214, 160, 0.1), rgba(37, 99, 235, 0.1)); border-radius: 15px;">
-                        <h4 style="font-family: 'Space Grotesk', monospace; margin-bottom: 20px; color: var(--light-gray);">
-                            <i class="fas fa-comments"></i> Parents Helpline
-                        </h4>
-                        <p style="color: var(--medium-gray); margin-bottom: 20px;">
-                            Call or WhatsApp for parent counseling in Hindi/Kannada:
-                        </p>
-                        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-                            <a href="tel:+919611038535" style="display: inline-flex; align-items: center; gap: 10px; background: var(--electric-blue); color: white; padding: 15px 30px; border-radius: 10px; text-decoration: none; font-weight: 600;">
-                                <i class="fas fa-phone-alt"></i> Call: +91 9611038535
-                            </a>
-                            <a href="https://wa.me/919611038535?text=Hello%20IWAN%20Tech%20Labs!%20I%20am%20a%20parent%20interested%20in%20cybersecurity%20training%20for%20my%20child." 
-                               target="_blank"
-                               style="display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 15px 30px; border-radius: 10px; text-decoration: none; font-weight: 600;">
-                                <i class="fab fa-whatsapp"></i> WhatsApp Parent Query
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <button class="cta-button" onclick="showPage('home')">
-                    <i class="fas fa-home"></i> Back to Home
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- FAQ Page -->
-    <div id="faq-page" class="page-container" style="display: none;">
-        <div class="container">
-            <div class="page-header">
-                <div class="page-badge">
-                    <i class="fas fa-question-circle"></i> Frequently Asked Questions
-                </div>
-                <h1 class="page-title">Common Questions Answered</h1>
-                <p class="page-subtitle">
-                    Quick answers to questions asked by rural students and parents.
-                </p>
-            </div>
-            
-            <div class="content-card">
-                <div class="faq-container">
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>1. Degree chahiye cybersecurity seekhne ke liye?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> Nahi, degree ki zarurat nahi hai. IWAN TECH LABS programs ke liye kisi bhi educational background ke students apply kar sakte hain - PUC, ITI, Diploma, ya koi bhi stream.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>2. English nahi aati to kya kar sakte hain?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> English ki tension mat lo. Hum pehle Hindi ya Kannada mein samjhate hain. Technical terms slowly introduce karte hain. 90% explanation regional language mein hota hai.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>3. Laptop compulsory hai?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> Basic computer ya smartphone se start kar sakte hain. Training ke baad aapko laptop lena padega practical practice ke liye. Hum guidance denge affordable options ke baare mein.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>4. Fees installment mein de sakte hain?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> Discussion ke baad installment options available hain. Paise ke wajah se kisi bhi student ki learning band nahi honi chahiye.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>5. Certificate ka kya value hai?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> Hamare certificates verifiable hain website pe. Certificate practical skills ka proof hai. Companies skills dekhti hain, sirf certificate nahi.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>6. Kitna time lagta hai seekhne mein?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> Depends on student ki speed pe. Fast learners 2-3 months mein basic skills seekh lete hain. Slow learners ke liye extra time dete hain. Hum repeat karte hain jab tak samajh na aaye.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>7. Job guarantee hai kya?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> Nahi, job guarantee nahi dete. Hum skills sikhaate hain, job guidance dete hain. Job student ki mehnat aur market conditions pe depend karta hai.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>8. Parents ko kaise samjhayenge?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> Hum parents se direct baat karte hain. Simple language mein cybersecurity career ke baare mein samjhaate hain. Aap parents ko humse baat karwa sakte hain.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>9. Online ya offline class?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> Local students ke liye offline guidance available hai. Door ke students ke liye online support via WhatsApp and calls. Hybrid model follow karte hain.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFAQ(this)">
-                            <h4>10. Age limit hai kya?</h4>
-                            <div class="faq-icon">
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
-                        <div class="faq-answer">
-                            <p><strong>Answer:</strong> Minimum 18 years age chahiye. Maximum koi limit nahi hai. Working professionals bhi join kar sakte hain career change ke liye.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="text-align: center; margin-top: 40px; padding: 30px; background: rgba(6, 214, 160, 0.1); border-radius: 15px;">
-                    <h4 style="font-family: 'Space Grotesk', monospace; margin-bottom: 20px; color: var(--light-gray);">
-                        <i class="fas fa-comment-alt"></i> Still Have Questions?
-                    </h4>
-                    <p style="color: var(--medium-gray); margin-bottom: 20px;">
-                        Contact us directly for personalized answers:
-                    </p>
-                    <a href="https://wa.me/919611038535?text=Hello%20IWAN%20Tech%20Labs!%20I%20have%20some%20questions%20about%20cybersecurity%20training." 
-                       target="_blank"
-                       style="display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 15px 30px; border-radius: 10px; text-decoration: none; font-weight: 600;">
-                        <i class="fab fa-whatsapp"></i> Ask on WhatsApp
-                    </a>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <button class="cta-button" onclick="showPage('home')">
-                    <i class="fas fa-home"></i> Back to Home
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Code of Ethics Page -->
-    <div id="ethics-page" class="page-container" style="display: none;">
-        <div class="container">
-            <div class="page-header">
-                <div class="page-badge">
-                    <i class="fas fa-balance-scale"></i> Code of Ethics
-                </div>
-                <h1 class="page-title">Ethical Guidelines</h1>
-                <p class="page-subtitle">
-                    Strict ethical standards for all IWAN TECH LABS students and trainers.
-                </p>
-            </div>
-            
-            <div class="content-card">
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <h2 class="section-title">Ethical Learning Only</h2>
-                    </div>
-                    <div class="content-text">
-                        All training at IWAN TECH LABS follows strict ethical guidelines:
-                    </div>
-                    
-                    <div class="ethics-list">
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Educational Purpose Only</h4>
-                                <p>Skills learned are for educational and career development purposes only.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Defensive Security Focus</h4>
-                                <p>We teach how to protect systems, not how to attack them without permission.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Legal Compliance</h4>
-                                <p>All training complies with Indian cybersecurity laws and regulations.</p>
-                            </div>
-                        </li>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-ban"></i>
-                        </div>
-                        <h2 class="section-title">No Illegal Hacking</h2>
-                    </div>
-                    <div class="content-text">
-                        Strict prohibition against illegal activities:
-                    </div>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
-                        <div style="background: rgba(239, 68, 68, 0.1); padding: 25px; border-radius: 15px; border-left: 4px solid #EF4444;">
-                            <h4 style="color: #EF4444; margin-bottom: 15px;"><i class="fas fa-times-circle"></i> Unauthorized Access</h4>
-                            <p style="color: var(--medium-gray);">Accessing systems without permission is strictly prohibited.</p>
-                        </div>
-                        <div style="background: rgba(239, 68, 68, 0.1); padding: 25px; border-radius: 15px; border-left: 4px solid #EF4444;">
-                            <h4 style="color: #EF4444; margin-bottom: 15px;"><i class="fas fa-times-circle"></i> Data Theft</h4>
-                            <p style="color: var(--medium-gray);">Stealing or copying data without authorization is illegal.</p>
-                        </div>
-                        <div style="background: rgba(239, 68, 68, 0.1); padding: 25px; border-radius: 15px; border-left: 4px solid #EF4444;">
-                            <h4 style="color: #EF4444; margin-bottom: 15px;"><i class="fas fa-times-circle"></i> System Damage</h4>
-                            <p style="color: var(--medium-gray);">Damaging or disrupting systems is strictly not allowed.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-flask"></i>
-                        </div>
-                        <h2 class="section-title">Controlled Lab Environments</h2>
-                    </div>
-                    <div class="content-text">
-                        All practical learning happens in controlled environments:
-                    </div>
-                    
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <h4>Isolated Virtual Labs</h4>
-                            <p>Practice in virtual machines that are completely isolated from the internet.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Specially Designed Exercises</h4>
-                            <p>All lab exercises are designed for educational purposes only.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>No Real Systems</h4>
-                            <p>Students never practice on real-world systems or networks.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-gavel"></i>
-                        </div>
-                        <h2 class="section-title">Zero Misuse Tolerance</h2>
-                    </div>
-                    
-                    <div class="highlight-box" style="background: rgba(239, 68, 68, 0.1); border-left-color: #EF4444;">
-                        <h4><i class="fas fa-exclamation-triangle" style="color: #EF4444; margin-right: 10px;"></i> Strict Policy</h4>
-                        <p>Any attempt to misuse skills learned at IWAN TECH LABS will result in immediate termination from programs and legal action if necessary.</p>
-                    </div>
-                    
-                    <div class="ethics-list" style="margin-top: 30px;">
-                        <li>
-                            <i class="fas fa-user-times"></i>
-                            <div>
-                                <h4>Immediate Termination</h4>
-                                <p>Any unethical behavior leads to immediate removal from training programs.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-balance-scale"></i>
-                            <div>
-                                <h4>Legal Consequences</h4>
-                                <p>Serious violations may be reported to appropriate authorities.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-ban"></i>
-                            <div>
-                                <h4>Lifetime Ban</h4>
-                                <p>Students removed for ethical violations cannot rejoin any future programs.</p>
-                            </div>
-                        </li>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h2 class="section-title">Student Agreement</h2>
-                    </div>
-                    <div class="content-text">
-                        All students must agree to:
-                    </div>
-                    
-                    <div class="verification-steps">
-                        <div class="verification-step">
-                            <h4>1. Ethical Use of Skills</h4>
-                            <p>Use cybersecurity skills only for legal and ethical purposes.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>2. Legal Compliance</h4>
-                            <p>Follow all applicable laws and regulations.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>3. Responsible Reporting</h4>
-                            <p>Report security vulnerabilities through proper channels only.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>4. Continuous Learning</h4>
-                            <p>Stay updated with ethical guidelines and best practices.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="regional-quote" style="margin-top: 40px; text-align: center;">
-                        "Ethical cybersecurity seekhna important hai. Illegal kaam se future kharab ho sakta hai."
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <button class="cta-button" onclick="showPage('home')">
-                    <i class="fas fa-home"></i> Back to Home
-                </button>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Privacy Policy Page -->
-    <div id="privacy-page" class="page-container" style="display: none;">
-        <div class="container">
-            <div class="page-header">
-                <div class="page-badge">
-                    <i class="fas fa-lock"></i> Privacy Policy & Terms
-                </div>
-                <h1 class="page-title">Privacy & Data Protection</h1>
-                <p class="page-subtitle">
-                    How we handle your personal information and data.
-                </p>
-            </div>
-            
-            <div class="content-card">
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h2 class="section-title">Data Usage Policy</h2>
-                    </div>
-                    <div class="content-text">
-                        We collect and use your data only for educational purposes:
-                    </div>
-                    
-                    <div class="info-grid">
-                        <div class="info-card">
-                            <h4>Contact Information</h4>
-                            <p>Used only for training-related communication and updates.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Educational Data</h4>
-                            <p>Used to personalize training and track progress.</p>
-                        </div>
-                        <div class="info-card">
-                            <h4>Certificate Information</h4>
-                            <p>Stored for verification purposes only.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="highlight-box" style="margin-top: 30px;">
-                        <h4><i class="fas fa-shield-alt" style="color: var(--cyber-teal); margin-right: 10px;"></i> Data Protection</h4>
-                        <p>We implement appropriate security measures to protect your personal information from unauthorized access or disclosure.</p>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <h2 class="section-title">WhatsApp Forms & Communication</h2>
-                    </div>
-                    <div class="content-text">
-                        Information submitted via WhatsApp forms:
-                    </div>
-                    
-                    <div class="verification-steps">
-                        <div class="verification-step">
-                            <h4>1. Form Submission</h4>
-                            <p>Data submitted via WhatsApp forms is used only for training inquiries.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>2. Communication Purpose</h4>
-                            <p>WhatsApp is used for training updates, doubt clearing, and important announcements.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>3. Opt-Out Option</h4>
-                            <p>You can request to stop WhatsApp communications at any time.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>4. No Spam Policy</h4>
-                            <p>We do not send promotional messages or spam via WhatsApp.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h2 class="section-title">Certificate Data Handling</h2>
-                    </div>
-                    <div class="content-text">
-                        How we handle certificate-related data:
-                    </div>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px;">
-                        <div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 15px;">
-                            <h4 style="color: var(--light-gray); margin-bottom: 15px;">Data Storage</h4>
-                            <p style="color: var(--medium-gray);">Certificate details stored securely for verification purposes.</p>
-                        </div>
-                        <div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 15px;">
-                            <h4 style="color: var(--light-gray); margin-bottom: 15px;">Verification Access</h4>
-                            <p style="color: var(--medium-gray);">Limited certificate data visible during verification process.</p>
-                        </div>
-                        <div style="background: rgba(255, 255, 255, 0.03); padding: 25px; border-radius: 15px;">
-                            <h4 style="color: var(--light-gray); margin-bottom: 15px;">Data Retention</h4>
-                            <p style="color: var(--medium-gray);">Certificate data retained for minimum 5 years for verification.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <h2 class="section-title">Your Rights</h2>
-                    </div>
-                    
-                    <div class="ethics-list">
-                        <li>
-                            <i class="fas fa-eye"></i>
-                            <div>
-                                <h4>Right to Access</h4>
-                                <p>You can request to see what data we have about you.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-edit"></i>
-                            <div>
-                                <h4>Right to Correction</h4>
-                                <p>You can request corrections to your data.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-trash-alt"></i>
-                            <div>
-                                <h4>Right to Deletion</h4>
-                                <p>You can request deletion of your data (subject to legal requirements).</p>
-                            </div>
-                        </li>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-file-contract"></i>
-                        </div>
-                        <h2 class="section-title">Terms of Service</h2>
-                    </div>
-                    
-                    <div class="highlight-box" style="background: rgba(251, 191, 36, 0.1); border-left-color: #FBBF24;">
-                        <h4><i class="fas fa-exclamation-triangle" style="color: #FBBF24; margin-right: 10px;"></i> Important Terms</h4>
-                        <p>By enrolling in our programs, you agree to use skills learned only for ethical purposes and comply with all program guidelines.</p>
-                    </div>
-                    
-                    <div class="verification-steps" style="margin-top: 30px;">
-                        <div class="verification-step">
-                            <h4>Program Participation</h4>
-                            <p>Students must actively participate and complete assigned exercises.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>Fee Policy</h4>
-                            <p>Fees are for training services. Installment plans subject to approval.</p>
-                        </div>
-                        <div class="verification-step">
-                            <h4>Certificate Eligibility</h4>
-                            <p>Certificates awarded only after completing all program requirements.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="content-section">
-                    <div class="section-heading">
-                        <div class="section-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h2 class="section-title">Contact for Privacy Concerns</h2>
-                    </div>
-                    <div class="content-text">
-                        For privacy-related questions or concerns:
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 30px; padding: 30px; background: rgba(255, 255, 255, 0.03); border-radius: 15px;">
-                        <p style="color: var(--medium-gray); margin-bottom: 20px;">
-                            Email: <strong>iwantechlabs@gmail.com</strong><br>
-                            Phone: <strong>+91 9611038535</strong>
-                        </p>
-                        <p style="color: var(--medium-gray); font-size: 0.9rem;">
-                            We respond to privacy concerns within 48 hours.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 40px;">
-                <button class="cta-button" onclick="showPage('home')">
-                    <i class="fas fa-home"></i> Back to Home
-                </button>
-            </div>
-        </div>
-    </div>
-
+    <!-- JavaScript (same as before, but updated to handle services form) -->
     <script>
         // Certificate Verification System
         let currentVerificationMethod = 'certificate';
@@ -4927,14 +3968,14 @@
         
         function showPage(pageName) {
             // Hide all pages
-            document.getElementById('about-page').style.display = 'none';
-            document.getElementById('founder-page').style.display = 'none';
-            document.getElementById('methodology-page').style.display = 'none';
-            document.getElementById('certificate-page').style.display = 'none';
-            document.getElementById('parents-page').style.display = 'none';
-            document.getElementById('faq-page').style.display = 'none';
-            document.getElementById('ethics-page').style.display = 'none';
-            document.getElementById('privacy-page').style.display = 'none';
+            document.getElementById('about-page')?.style.display = 'none';
+            document.getElementById('founder-page')?.style.display = 'none';
+            document.getElementById('methodology-page')?.style.display = 'none';
+            document.getElementById('certificate-page')?.style.display = 'none';
+            document.getElementById('parents-page')?.style.display = 'none';
+            document.getElementById('faq-page')?.style.display = 'none';
+            document.getElementById('ethics-page')?.style.display = 'none';
+            document.getElementById('privacy-page')?.style.display = 'none';
             
             // Hide main sections
             document.querySelectorAll('section').forEach(section => {
@@ -5304,42 +4345,34 @@
         // Initialize URL check
         checkUrlForCertificate();
         
-        // Form Submission
+        // Form Submission for Services & Training
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
             // Get form values
             const name = document.getElementById('fullName').value;
             const phone = document.getElementById('phone').value;
-            const village = document.getElementById('village').value || 'Not specified';
-            const program = document.getElementById('program').value || 'Not specified';
-            const language = document.getElementById('language').value || 'Not specified';
+            const email = document.getElementById('email').value;
+            const inquiryType = document.getElementById('inquiryType').value;
+            const serviceType = document.getElementById('serviceType').value;
             const message = document.getElementById('message').value;
             
             // Validate form
-            if (!name || !phone || !message || !program) {
-                alert('Please fill all required fields (Name, WhatsApp Number, Training Program, Background)');
+            if (!name || !phone || !email || !inquiryType || !message) {
+                alert('Please fill all required fields (Name, Phone, Email, Inquiry Type, Requirements)');
                 return;
             }
             
-            // Create WhatsApp message with rural focus
-            const whatsappMessage = `🎯 *IWAN Tech Labs - Rural Student Application*%0A%0A*Name:* ${name}%0A*WhatsApp:* ${phone}%0A*Village/Town:* ${village}%0A*Preferred Language:* ${language}%0A*Training Program:* ${program}%0A%0A*Background:*%0A${message}%0A%0A*Note:* I'm interested in rural-friendly cybersecurity training.`;
+            // Create WhatsApp message for services/training
+            const whatsappMessage = `🎯 *IWAN Tech Labs - Service/Training Inquiry*%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Email:* ${email}%0A*Inquiry Type:* ${inquiryType}%0A*Service/Training:* ${serviceType || 'Not specified'}%0A%0A*Requirements:*%0A${message}%0A%0A*Note:* Interested in ${inquiryType === 'service' ? 'cybersecurity services' : inquiryType === 'training' ? 'training programs' : 'services & training'}.`;
             
             // Open WhatsApp
             window.open(`https://wa.me/919611038535?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
             
-            // Show success message in appropriate language
-            let successMessage = `Thank you ${name}! Your training program application has been submitted.\n\nWe will contact you within 24 hours to discuss the ${program} program.\n\nWe can explain in Hindi/Kannada if needed.`;
+            // Show success message
+            let successMessage = `Thank you ${name}! Your ${inquiryType} inquiry has been submitted.\n\nWe will contact you within 24 hours to discuss ${serviceType || 'your requirements'}.\n\nWe can explain in Hindi/Kannada if needed.`;
             
-            if (language === 'hindi') {
-                successMessage = `धन्यवाद ${name}! आपका ट्रेनिंग प्रोग्राम एप्लीकेशन सबमिट हो गया है।\n\nहम 24 घंटे के अंदर ${program} प्रोग्राम के बारे में आपसे बात करेंगे।\n\nहम हिंदी में समझा सकते हैं।`;
-            } else if (language === 'kannada') {
-                successMessage = `ಧನ್ಯವಾದಗಳು ${name}! ನಿಮ್ಮ ತರಬೇತಿ ಕಾರ್ಯಕ್ರಮ ಅರ್ಜಿ ಸಲ್ಲಿಸಲಾಗಿದೆ.\n\nನಾವು 24 ಗಂಟೆಗಳೊಳಗೆ ${program} ಕಾರ್ಯಕ್ರಮದ ಬಗ್ಗೆ ನಿಮ್ಮೊಂದಿಗೆ ಮಾತನಾಡುತ್ತೇವೆ.\n\nನಾವು ಕನ್ನಡದಲ್ಲಿ ವಿವರಿಸಬಹುದು.`;
-            }
-            
-            setTimeout(() => {
-                alert(successMessage);
-            }, 500);
+            alert(successMessage);
             
             // Reset form
             this.reset();
@@ -5432,11 +4465,11 @@
         });
         
         // Console message
-        console.log('IWAN Tech Labs - Rural Cybersecurity Training Initiative');
-        console.log('Special Features: No Degree Required | Hindi/Kannada Support | Parent Guidance');
-        console.log('Training Contact: +91 9611038535 | iwantechlabs@gmail.com');
-        console.log('Serving: Rural Karnataka, Channagiri Taluk, Davanagere District');
-        console.log('Website loaded with advanced rural-focused features');
+        console.log('IWAN Tech Labs - Cybersecurity Services & Training');
+        console.log('Services: Security Assessment, Compliance, SOC Support, Incident Response, Corporate Training');
+        console.log('Training: No Degree Required | Hindi/Kannada Support | Rural Focus');
+        console.log('Contact: +91 9611038535 | iwantechlabs@gmail.com');
+        console.log('Serving: Karnataka Organizations & Rural Communities');
         
         // Initialize verification on page load
         window.addEventListener('load', function() {
